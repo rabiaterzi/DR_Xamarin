@@ -1,0 +1,15 @@
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\bin\Debug\netstandard2.0\DRxamarin.deps.json
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\bin\Debug\netstandard2.0\DRxamarin.dll
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\bin\Debug\netstandard2.0\ref\DRxamarin.dll
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\bin\Debug\netstandard2.0\DRxamarin.pdb
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\DRxamarin.csprojAssemblyReference.cache
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\DRxamarin.csproj.CoreCompileInputs.cache
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\DRxamarin.AssemblyInfoInputs.cache
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\DRxamarin.AssemblyInfo.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\DRxamarin.dll
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\ref\DRxamarin.dll
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\DRxamarin.pdb
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\uyegirisi.xaml.g.cs
