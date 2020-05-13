@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DRxamarin.arama">
+    <ContentPage.Content>
+        <StackLayout>
+			<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="60">
+				<Image HorizontalOptions="StartAndExpand" Source="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
+				<Label Text="Arama" FontSize="Title" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+				<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal"  HeightRequest="40">
+				<SearchBar HorizontalOptions="StartAndExpand" BackgroundColor="White" WidthRequest="320"  Placeholder="Kitap, Müzik, Hobi, Oyuncak" />
+				<Image  HorizontalOptions="CenterAndExpand" Source="https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/barcode-1-128.png" HeightRequest="25"/>
+				<Image HorizontalOptions="EndAndExpand" Source="https://cdn3.iconfinder.com/data/icons/ui-outline-1/100/ui_47-128.png" HeightRequest="25"/>
+			</StackLayout>
+			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3">
+				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
+						<Button ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
+						<Label  Text="Ana Sayfa" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+						<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
+						<Label Text="Kategoriler" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
+						<Label Text="Keşfet" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
+						<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
+						<Label Text="Sepet" />
+					</StackLayout>
+				</StackLayout>
+			</Frame>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

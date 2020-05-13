@@ -2,39 +2,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+			 mc:Ignorable="d"
              x:Class="DRxamarin.MainPage">
 
 
-	
-		<StackLayout Orientation="Vertical" >
-			<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="60">
-				
-				<Image HorizontalOptions="CenterAndExpand" Source="https://www.dr.com.tr/Themes/DR/Content/assets/images/general/head-logo.png" />
-				<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="40" HeightRequest="40" />
+
+	<StackLayout Orientation="Vertical" > 
+		<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="60">
+			    <Button BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" ImageSource="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
+			    <Image HorizontalOptions="Center" Source="https://www.dr.com.tr/Themes/DR/Content/assets/images/general/head-logo.png" HeightRequest="50" WidthRequest="50"/>
+				<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
 			</StackLayout>
+		
 			<StackLayout Orientation="Horizontal"  HeightRequest="40">
-				<SearchBar HorizontalOptions="StartAndExpand" BackgroundColor="White" WidthRequest="280"  Placeholder="Kitap, Müzik, Hobi, Oyuncak" />
-				<Image  HorizontalOptions="CenterAndExpand" Source="https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/barcode-1-128.png"/>
-				<Image HorizontalOptions="EndAndExpand" Source="https://cdn3.iconfinder.com/data/icons/ui-outline-1/100/ui_47-128.png" />
+				<SearchBar HorizontalOptions="StartAndExpand" BackgroundColor="White" WidthRequest="320"  Placeholder="Kitap, Müzik, Hobi, Oyuncak" />
+				<Image  HorizontalOptions="CenterAndExpand" Source="https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/barcode-1-128.png" HeightRequest="25"/>
+				<Image HorizontalOptions="EndAndExpand" Source="https://cdn3.iconfinder.com/data/icons/ui-outline-1/100/ui_47-128.png" HeightRequest="25"/>
 			</StackLayout>
 
 			<ScrollView Orientation="Vertical" >
 				<StackLayout Orientation="Vertical">
+				    <StackLayout HeightRequest="200">
+					<cv:CarouselViewControl Orientation="Horizontal" InterPageSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+											ShowIndicators="True" AnimateTransition="True" HeightRequest="180">
+						<cv:CarouselViewControl.ItemsSource>
+							<x:Array Type="{x:Type View}">
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0520_d_t_9_851x373_jbl.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/851x373_fikriyatkuseyri.png"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/ramazan-ana-sayfa.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0520_d_t_15_851x373_bakim_setleri.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0520_d_u_x_851x373_anneler_gunu_canon.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/dji-ana-sayfa.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0420_d_u_x_851x373_lego_cocukluk_hayalim.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0420_d_u_15_851x373_mayis_oyuncak_lp.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0420_d_u_14_851x373_mayis_teknoloji_lp.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0520_d_t_11_851x373_zerens_kutu_oyunlari.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0320_d_u_x_851x373_haftanin_firsati_kusurat.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/thumbnail_0520_d_u_x_851x373_faber_castell_indirim.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0520_d_t_4_851x373_gunlerin_sonu_v4.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0520_d_t_5_851x373_nikel_cocuklari_v2.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/plak-kampanyasi-homepage-new3.jpg"/>
+								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/BannerFiles/dr/0420_d_u_2_851x373_twin_il_evde_ogrenmek_rev.jpg"/>
+							</x:Array>
+						</cv:CarouselViewControl.ItemsSource>
+					</cv:CarouselViewControl>
+				    </StackLayout>
 
-
-
-					<StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" >
-
-						<!--burasına slider gelecek yani caruosel view-->
-
-					</StackLayout>
-
-					<StackLayout Orientation="Horizontal" BackgroundColor="LightGray" HeightRequest="35" Padding="7">
-						<Button Text="Oyuncaklar" BackgroundColor="Red" TextColor="White"/>
-						<Button Text="Elektronik" BackgroundColor="Blue" TextColor="White"/>
-						<Button Text="Yeni Çıkanlar" BackgroundColor="Orange" TextColor="White"/>
+				    <StackLayout Orientation="Horizontal" BackgroundColor="#f3f1f1" HeightRequest="35" Padding="7">
+						<Button Text="Oyuncaklar" BackgroundColor="Red" TextColor="White" HorizontalOptions="StartAndExpand"/>
+						<Button Text="Elektronik" BackgroundColor="Blue" TextColor="White" HorizontalOptions="Center"/>
+						<Button Text="Yeni Çıkanlar" BackgroundColor="Orange" TextColor="White" HorizontalOptions="EndAndExpand"/>
 					</StackLayout>
 
 					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="180">
@@ -45,15 +63,13 @@
 						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
 								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									<Label Text="buralar hep kitap:)" />
-									<Label Text="buralar hep kitap:" />
-									<Label Text="buralar hep kitap:" />
+									
 								</StackLayout>
 							</ScrollView>
 						</StackLayout>
 					</StackLayout>
 
-					<StackLayout Orientation="Vertical" BackgroundColor="#e9e9e9" HeightRequest="180">
+				    <StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="180">
 						<StackLayout Orientation="Horizontal"  >
 							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Kırtasiye Ürünleri" />
 							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
@@ -61,9 +77,7 @@
 						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
 								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									<Label Text="buralar hep kitap:)" />
-									<Label Text="buralar hep kitap:" />
-									<Label Text="buralar hep kitap:" />
+									
 								</StackLayout>
 							</ScrollView>
 						</StackLayout>
@@ -77,9 +91,7 @@
 						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
 								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									<Label Text="buralar hep kitap:)" />
-									<Label Text="buralar hep kitap:" />
-									<Label Text="buralar hep kitap:" />
+									
 								</StackLayout>
 							</ScrollView>
 						</StackLayout>
@@ -92,9 +104,7 @@
 						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
 								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									<Label Text="buralar hep kitap:)" />
-									<Label Text="buralar hep kitap:" />
-									<Label Text="buralar hep kitap:" />
+									
 								</StackLayout>
 							</ScrollView>
 						</StackLayout>
@@ -114,10 +124,10 @@
 									<RowDefinition Height="*" />
 									<RowDefinition Height="*" />
 								</Grid.RowDefinitions>
-								<Image  Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/anneler-gunu-hediyesi/anneler-gunu-1_07.jpg" Grid.Row="0" Grid.Column="0"  />
-								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/anneler-gunu-hediyesi/anneler-gunu-1_21.jpg" Grid.Row="0" Grid.Column="1" />
-								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/anneler-gunu-hediyesi/anneler-gunu-1_29.jpg" Grid.Row="1" Grid.Column="0"  />
-								<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/anneler-gunu-hediyesi/anneler-gunu-1_15.jpg" Grid.Row="1" Grid.Column="1" />
+							    <Image  Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/nisan-kitap/nisan-kitap-1_09.jpg" Grid.Row="0" Grid.Column="0"  />
+							    <Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/nisan-kitap/nisan-kitap-1_05.jpg" Grid.Row="0" Grid.Column="1" />
+							    <Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/ramazan/ramazan-5.jpg" Grid.Row="1" Grid.Column="0"  />
+							    <Image Source="https://www.gununfirsati.com/imgcamp/dr-20200114-1333.jpg" Grid.Row="1" Grid.Column="1" />
 							</Grid>
 						</StackLayout>
 					</StackLayout>
@@ -126,20 +136,20 @@
 
 			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3">
 				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
-					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
-						<Image HeightRequest="30" WidthRequest="30"  Source="https://cdn2.iconfinder.com/data/icons/linkedin-ui-flat/48/LinkedIn_UI-15-128.png" />
-						<Label  Text="Ana Sayfa" />
+				    <StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
+					<Button ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
+					    <Label  Text="Ana Sayfa" />
 					</StackLayout>
 					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
-						<Image HeightRequest="25" WidthRequest="25"  Source="https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/price-tag-7-128.png" />
+					<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Kategoriler" />
 					</StackLayout>
 					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
-						<Image HeightRequest="30" WidthRequest="30" Source="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" />
+						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
 						<Label Text="Keşfet" />
 					</StackLayout>
 					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
-						<Image HeightRequest="30" WidthRequest="30"  Source="https://cdn1.iconfinder.com/data/icons/shopping-234/64/shopping_red_outline_basket-512.png" />
+					<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Sepet" />
 					</StackLayout>
 				</StackLayout>
