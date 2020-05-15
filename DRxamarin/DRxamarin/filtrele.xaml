@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DRxamarin.filtrele">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+			<Frame BorderColor="LightGray">
+				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
+					<Button BackgroundColor="Transparent" WidthRequest="60" Clicked="arastırmatarih" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Left-icon.png"/>
+					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Filtre" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
+				</StackLayout>
+			</Frame>
+			<StackLayout Orientation="Vertical" BackgroundColor="#f9f9f9">
+				<StackLayout Orientation="Horizontal">
+					<Button Clicked="fkategori" BackgroundColor="Transparent" Text="Kategori" WidthRequest="140" HorizontalOptions="Start"/>
+					<Button Clicked="fkategori" WidthRequest="155" BackgroundColor="Transparent"/>
+					<Button Clicked="fkategori" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/48/Arrows-Forward-icon.png"/>
+				</StackLayout>
+				<Label HeightRequest="1" BackgroundColor="LightGray"/>
+				<StackLayout Orientation="Horizontal">
+					<Button Clicked="fyayınevi" BackgroundColor="Transparent" Text="Yayınevi" WidthRequest="135" HorizontalOptions="Start"/>
+					<Button Clicked="fyayınevi" WidthRequest="160" BackgroundColor="Transparent"/>
+					<Button Clicked="fyayınevi" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/48/Arrows-Forward-icon.png"/>
+				</StackLayout>
+				<Label HeightRequest="1" BackgroundColor="LightGray"/>
+				<StackLayout Orientation="Horizontal">
+					<Button Clicked="fyazar" BackgroundColor="Transparent" Text="Yazar" WidthRequest="122" HorizontalOptions="Start"/>
+					<Button Clicked="fyazar" WidthRequest="173" BackgroundColor="Transparent"/>
+					<Button Clicked="fyazar" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/48/Arrows-Forward-icon.png"/>
+				</StackLayout>
+				<Label HeightRequest="1" BackgroundColor="LightGray"/>
+				<StackLayout Orientation="Horizontal">
+					<Button Clicked="ffiyat" BackgroundColor="Transparent" Text="Fiyat" WidthRequest="120" HorizontalOptions="Start"/>
+					<Button Clicked="ffiyat" WidthRequest="175" BackgroundColor="Transparent"/>
+					<Button Clicked="ffiyat" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/48/Arrows-Forward-icon.png"/>
+				</StackLayout>
+				<Label HeightRequest="1" BackgroundColor="LightGray"/>
+				<StackLayout Orientation="Horizontal">
+					<Button Clicked="fmedya" BackgroundColor="Transparent" Text="Medya Tipi" WidthRequest="157" HorizontalOptions="Start"/>
+					<Button Clicked="fmedya" WidthRequest="138" BackgroundColor="Transparent"/>
+					<Button Clicked="fmedya" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/48/Arrows-Forward-icon.png"/>
+				</StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HeightRequest="70">
+				<CheckBox Margin="34,0,0,0" HeightRequest="40" WidthRequest="40" Color="Black"/>
+				<Label Text="TÜKENENLERİ GÖSTER" VerticalOptions="Center"/>
+			</StackLayout>
+			<Button Clicked="arastırmatarih" Margin="0,130,0,0" TextColor="White" Text="FİLTRELE(16595 adet)" BackgroundColor="Red" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="385" HeightRequest="50"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

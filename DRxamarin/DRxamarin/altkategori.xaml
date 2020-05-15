@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DRxamarin.altkategori">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+			<Frame BorderColor="LightGray">
+				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
+					<Button Clicked="kategori" BackgroundColor="Transparent" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Back-icon.png"/>
+					<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="Araştırma-Tarih" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="300"/>
+					<Button Clicked="arama" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/praveen/minimal-outline/96/search-icon.png" HeightRequest="30" WidthRequest="30" />
+					<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
+				</StackLayout>
+			</Frame>
+			<ScrollView Orientation="Horizontal" >
+				<StackLayout Orientation="Horizontal" HeightRequest="50">
+					<Button Text="Tarih" BackgroundColor="#e64894" />
+					<Button Text="Politika/Araştırma" BackgroundColor="LightBlue" />
+					<Button Text="Sosyoloji" BackgroundColor="#c7ff50" />
+					<Button Text="Kadın" BackgroundColor="#e64894" />
+					<Button Text="Etnoloji" BackgroundColor="LightBlue" />
+					<Button Text="İstanbul Kitapları" BackgroundColor="Yellow" />
+					<Button Text="Tarihi Kişiler" BackgroundColor="#e64894" />
+					<Button Text="Ermeni Meselesi" BackgroundColor="LightBlue" />
+					<Button Text="Organize Suç" BackgroundColor="#c7ff50" />
+				</StackLayout>
+			</ScrollView>
+			<StackLayout Orientation="Horizontal" HeightRequest="60" BackgroundColor="#f3f1f1">
+				<Button Clicked="filtre" HorizontalOptions="CenterAndExpand" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Filter-2-icon.png" BackgroundColor="Transparent" Text="Filtrele"/>
+				<Button Clicked="sırala" HorizontalOptions="CenterAndExpand" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Up-Down-3-icon.png" BackgroundColor="Transparent" Text="Sırala"/>
+			</StackLayout>
+			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3" >
+				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
+						<Button Clicked="anasayfa" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
+						<Label  Text="Ana Sayfa" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+						<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
+						<Label Text="Kategoriler" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
+						<Label Text="Keşfet" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
+						<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
+						<Label Text="Sepet" />
+					</StackLayout>
+				</StackLayout>
+			</Frame>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

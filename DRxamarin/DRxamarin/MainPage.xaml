@@ -11,7 +11,7 @@
 	<StackLayout Orientation="Vertical" > 
 		<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="60">
 			    <Button BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" ImageSource="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
-			    <Image HorizontalOptions="Center" Source="https://www.dr.com.tr/Themes/DR/Content/assets/images/general/head-logo.png" HeightRequest="50" WidthRequest="50"/>
+			    <Image Margin="0,0,20,0" HorizontalOptions="Center" Source="https://www.dr.com.tr/Themes/DR/Content/assets/images/general/head-logo.png" HeightRequest="50" WidthRequest="50"/>
 				<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
 			</StackLayout>
 		
@@ -55,58 +55,96 @@
 						<Button Text="Yeni Çıkanlar" BackgroundColor="Orange" TextColor="White" HorizontalOptions="EndAndExpand"/>
 					</StackLayout>
 
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="180">
+					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
 						<StackLayout Orientation="Horizontal" >
 							<Label HorizontalOptions="StartAndExpand" FontSize="17"  Text="Öne Çıkan Kitaplar" />
 							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
 						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
+						<StackLayout Orientation="Horizontal" BackgroundColor="White">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									
+								<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding onecikanlar}" VerticalOptions="Start" >
+								<BindableLayout.ItemTemplate>
+									<DataTemplate>
+										<StackLayout VerticalOptions="Start">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
+												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+											<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+										</StackLayout>
+									</DataTemplate>
+								</BindableLayout.ItemTemplate>
 								</StackLayout>
 							</ScrollView>
 						</StackLayout>
 					</StackLayout>
 
-				    <StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="180">
+				    <StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="300">
 						<StackLayout Orientation="Horizontal"  >
 							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Kırtasiye Ürünleri" />
 							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
 						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
+						<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									
-								</StackLayout>
-							</ScrollView>
+							<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding Kirtasiye}" VerticalOptions="Start" >
+								<BindableLayout.ItemTemplate>
+									<DataTemplate>
+										<StackLayout VerticalOptions="Start">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
+												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+										</StackLayout>
+									</DataTemplate>
+								</BindableLayout.ItemTemplate>
+							</StackLayout>
+						</ScrollView>
 						</StackLayout>
 					</StackLayout>
 
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="180">
+					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
 						<StackLayout Orientation="Horizontal"  >
 							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Teknoloji" />
 							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
 						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
+						<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									
-								</StackLayout>
-							</ScrollView>
+							<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding Teknoloji}" VerticalOptions="Start" >
+								<BindableLayout.ItemTemplate>
+									<DataTemplate>
+										<StackLayout VerticalOptions="Start">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
+												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+										</StackLayout>
+									</DataTemplate>
+								</BindableLayout.ItemTemplate>
+							</StackLayout>
+						</ScrollView>
 						</StackLayout>
 					</StackLayout>
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="180">
+					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
 						<StackLayout Orientation="Horizontal"  >
 							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Çok Satanlar" />
 							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
 						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
+						<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
 							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									
-								</StackLayout>
-							</ScrollView>
+							<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding Coksatanlar}" VerticalOptions="Start" >
+								<BindableLayout.ItemTemplate>
+									<DataTemplate>
+										<StackLayout VerticalOptions="Start">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
+												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+											<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+										</StackLayout>
+									</DataTemplate>
+								</BindableLayout.ItemTemplate>
+							</StackLayout>
+						</ScrollView>
 						</StackLayout>
 					</StackLayout>
 

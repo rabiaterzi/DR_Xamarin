@@ -14,7 +14,7 @@ namespace DRxamarin {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("uyegirisi.xaml")]
-    public partial class uyegirisi : global::Xamarin.Forms.ContentPage {
+    public partial class uyegirisi : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {

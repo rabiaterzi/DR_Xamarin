@@ -43,7 +43,7 @@ namespace DRxamarin.clouddata
 				  kategorilistesi = JsonConvert.DeserializeObject<List<kategoriler>>(jsonString.Result);
 			  });
 			task.Wait();
-			return kategorilistesi;	var jsondata = task.Content.ReadAsStringAsync().Result;
+			return kategorilistesi;	/*var jsondata = task.Content.ReadAsStringAsync().Result;
 			var root = JsonConvert.DeserializeObject<List<kategoriler>>(jsondata);
 			return root;
 		}*/

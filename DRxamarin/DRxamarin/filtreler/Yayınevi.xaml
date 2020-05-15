@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DRxamarin.filtreler.Yayınevi">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+			<Frame BorderColor="LightGray">
+				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
+					<Button BackgroundColor="Transparent" WidthRequest="60" Clicked="filtre" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Left-icon.png"/>
+					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Yayınevi" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
+				</StackLayout>
+			</Frame>
+			<SearchBar Placeholder="Yayınevi ara..."/>
+			<ScrollView Orientation="Vertical">
+				<StackLayout Orientation="Vertical">
+					<Button Text="İletişim Yayıncılık (664)" BackgroundColor="Transparent" Margin="0,0,150,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Ötüken Neşriyat (286)" BackgroundColor="Transparent" Margin="0,0,161,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="İş Bankası Kültür Yayınları (270)" BackgroundColor="Transparent" Margin="0,0,95,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Çizgi Kitabevi (261)" BackgroundColor="Transparent" Margin="0,0,180,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="İmge Kitabevi (249)" BackgroundColor="Transparent" Margin="0,0,180,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Alfa Yayıncılık (241)" BackgroundColor="Transparent" Margin="0,0,175,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Nobel Akademik Yayıncılık (240)" BackgroundColor="Transparent" Margin="0,0,95,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Yeditepe Yayınevi (234)" BackgroundColor="Transparent" Margin="0,0,150,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Kaynak Yayınları (233)" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="IQ Kültür Sanat Yayıncılık (207)" BackgroundColor="Transparent" Margin="0,0,102,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Metis Yayıncılık (206)" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Timaş Yayınları (190)" BackgroundColor="Transparent" Margin="0,0,165,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Cinius (183)" BackgroundColor="Transparent" Margin="0,0,215,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Gece Kitaplığı (170)" BackgroundColor="Transparent" Margin="0,0,175,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Doğan Kitap (153)" BackgroundColor="Transparent" Margin="0,0,185,0"/>
+				</StackLayout>
+			</ScrollView>
+			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

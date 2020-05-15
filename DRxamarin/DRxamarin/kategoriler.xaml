@@ -8,7 +8,7 @@
     <ContentPage.Content>
 		<StackLayout Orientation="Vertical">
 			<Frame BorderColor="LightGray">
-			<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="60" >
+			<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
 				<Image HorizontalOptions="StartAndExpand" Source="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
 				<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="Kategoriler" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
 				<Button Clicked="arama" BackgroundColor="Transparent" Margin="120,0,0,0" ImageSource="http://icons.iconarchive.com/icons/praveen/minimal-outline/96/search-icon.png" HeightRequest="30" WidthRequest="30" />
@@ -57,22 +57,22 @@
 					</StackLayout>
 					<ScrollView Orientation="Vertical">
 						<StackLayout Orientation="Vertical">
-						<Label Text="Araştırma-Tarih" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Bilim" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Çizgi Roman" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Çocuk ve Gençlik" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Ders/Sınav Kitapları" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Din Tasavvuf" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Edebiyat" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Eğitim Başvuru" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Felsefe" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Foreign Languages" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Hobi" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Mitoloji Efsane" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Mizah" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Prestij Kitapları" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Sanat-Tasarım" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-						<Label Text="Sesli Kitaplar" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Button Clicked="altkategorii" Text="Araştırma-Tarih" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray" BackgroundColor="White" HeightRequest="55" WidthRequest="300"/>
+						    <Label Text="Bilim" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="300"/>
+							<Label Text="Çizgi Roman"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Çocuk ve Gençlik"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Ders/Sınav Kitapları"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Din Tasavvuf"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Edebiyat"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Eğitim Başvuru"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Felsefe"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Foreign Languages"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Hobi"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Mitoloji Efsane"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Mizah"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Prestij Kitapları"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Sanat-Tasarım"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label Text="Sesli Kitaplar"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
 					</StackLayout>
 					</ScrollView>
 				</StackLayout>

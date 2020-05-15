@@ -59,5 +59,9 @@ namespace DRxamarin
 		{
 			await Navigation.PushModalAsync(new arama());
 		}
+		async void altkategorii(object o, EventArgs args)
+		{
+			await Navigation.PushModalAsync(new altkategori());
+		}
 	}
 }

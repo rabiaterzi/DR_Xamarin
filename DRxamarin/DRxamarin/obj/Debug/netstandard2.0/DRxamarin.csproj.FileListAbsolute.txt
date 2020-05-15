@@ -17,3 +17,12 @@ C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2
 C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\Menu.xaml.g.cs
 C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\DRxamarin.csproj.CoreCompileInputs.cache
 C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\urunayrıntı.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\altkategori.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\filtrele.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\sıralama.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\filtreler\Fiyat.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\filtreler\Kategori.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\filtreler\MedyaTipi.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\filtreler\Yayınevi.xaml.g.cs
+C:\Users\terzi\source\repos\DRxamarin\DRxamarin\DRxamarin\obj\Debug\netstandard2.0\filtreler\Yazar.xaml.g.cs

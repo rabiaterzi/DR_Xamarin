@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DRxamarin.filtreler.Yazar">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+			<Frame BorderColor="LightGray">
+				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
+					<Button BackgroundColor="Transparent" WidthRequest="60" Clicked="filtre" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Left-icon.png"/>
+					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Yazar" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
+				</StackLayout>
+			</Frame>
+			<SearchBar Placeholder="Yazar ara..."/>
+			<ScrollView Orientation="Vertical">
+				<StackLayout Orientation="Vertical">
+					<Button Text="Kolektif (1118)" BackgroundColor="Transparent" Margin="0,0,190,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Mustafa Kemal Atatürk (133)" BackgroundColor="Transparent" Margin="0,0,95,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Yunus Karaaslan (103)" BackgroundColor="Transparent" Margin="0,0,135,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Mustafa Karagüllüoğlu (89)" BackgroundColor="Transparent" Margin="0,0,105,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Sercan Arslan (78)" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Celal Coşkun (71)" BackgroundColor="Transparent" Margin="0,0,165,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Mustafa Küpüşoğlu (60)" BackgroundColor="Transparent" Margin="0,0,120,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Ahmet Üzümcüoğlu (58)" BackgroundColor="Transparent" Margin="0,0,122,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Ziya Gökalp (52)" BackgroundColor="Transparent" Margin="0,0,170,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Adem Şenel (47)" BackgroundColor="Transparent" Margin="0,0,175,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Mahmut Arlı (45)" BackgroundColor="Transparent" Margin="0,0,170,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Orhan Türkdoğan (44)" BackgroundColor="Transparent" Margin="0,0,135,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Karl Marx (41)" BackgroundColor="Transparent" Margin="0,0,185,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Ali Kuzu (38)" BackgroundColor="Transparent" Margin="0,0,200,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="İlber Ortaylı (36)" BackgroundColor="Transparent" Margin="0,0,170,0"/>
+				</StackLayout>
+			</ScrollView>
+			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

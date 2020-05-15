@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DRxamarin.sıralama">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+			<Frame BorderColor="LightGray">
+				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
+					<Button BackgroundColor="Transparent" WidthRequest="60" Clicked="filtre" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Left-icon.png"/>
+					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Sıralama" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
+				</StackLayout>
+			</Frame>
+			<ScrollView Orientation="Vertical">
+				<StackLayout Orientation="Vertical">
+					<Button Text="En Çok Satan" BackgroundColor="Transparent" Margin="0,0,195,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Fiyata Göre Azalan" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Fiyata Göre Artan" BackgroundColor="Transparent" Margin="0,0,168,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="En Çok Yorum Alan" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Yeni" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Eski" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="A-Z" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="Z-A" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="İndirime Göre Azalan" BackgroundColor="Transparent" Margin="0,0,145,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+					<Button Text="İndirime Göre Artan" BackgroundColor="Transparent" Margin="0,0,145,0"/>
+					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+				</StackLayout>
+			</ScrollView>
+			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

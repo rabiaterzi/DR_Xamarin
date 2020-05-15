@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DRxamarin.filtreler.MedyaTipi">
+    <ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<Frame BorderColor="LightGray">
+				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
+					<Button BackgroundColor="Transparent" WidthRequest="60" Clicked="filtre" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Left-icon.png"/>
+					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Medya Tipi" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
+				</StackLayout>
+			</Frame>
+			<Button Text="İnce Kapak (16133)" BackgroundColor="Transparent" Margin="0,0,190,0"/>
+			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+			<Button Text="Ciltli (406)" BackgroundColor="Transparent" Margin="0,0,245,0"/>
+			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+			<Button Text="Cep Boy (36)" BackgroundColor="Transparent" Margin="0,0,235,0"/>
+			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
+			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White" Margin="0,345,0,0"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

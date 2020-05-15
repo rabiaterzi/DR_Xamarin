@@ -1,15 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="DRxamarin.uyegirisi">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+  <!--Pages can be added as references or inline-->
+	<TabbedPage.Children>
+		<ContentPage Title="Giriş Yapın" BackgroundColor="White" >
+			<ScrollView Orientation="Vertical">
+				<StackLayout Orientation="Vertical"  Spacing="25" Padding="20">
+					<StackLayout>
+						<Label Text="E-Posta Adresi" />
+						<Entry Keyboard="Email"   />
+					</StackLayout>
+					<StackLayout Spacing="10">
+						<StackLayout Orientation="Horizontal">
+							<Label Text="Parola"   HorizontalOptions="StartAndExpand" />
+							<Label Text="Parolamı Unuttum"  HorizontalOptions="EndAndExpand" TextDecorations="Underline" />
+						</StackLayout>
+
+						<Entry IsPassword="True" />
+					</StackLayout>
+
+					<StackLayout Orientation="Horizontal">
+						<CheckBox IsChecked="False" Color="Red" />
+						<Label Text="Beni Hatırla"  FontAttributes="Bold" />
+					</StackLayout>
+					<Button Clicked="giris" Text="Giriş Yap" FontAttributes="Bold"  BackgroundColor="Red" TextColor="White"  />
+
+				</StackLayout>
+			</ScrollView>
+		</ContentPage>
+
+
+
+		<ContentPage Title="Üye Olun" BackgroundColor="White" >
+			<ScrollView Orientation="Vertical">
+				<StackLayout Orientation="Vertical" Spacing="25" Padding="20">
+					<StackLayout>
+						<Label Text="Adınız" />
+						<Entry  />
+					</StackLayout>
+					<StackLayout>
+						<Label Text="Soyadınız" />
+						<Entry  />
+					</StackLayout>
+					<StackLayout>
+						<Label Text="E-Posta Adresiniz" />
+						<Entry Keyboard="Email" />
+					</StackLayout>
+					<StackLayout>
+						<Label Text="Şifrenizi Oluşturun" />
+						<Entry Placeholder="En az 8 karakter - En az 1 büyük harf - En az bir küçük harf" IsPassword="True" />
+					</StackLayout>
+					<StackLayout>
+						<Label Text="Şifrenizi Tekrar Giriniz" />
+						<Entry IsPassword="True" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+						<CheckBox IsChecked="False" Color="Red" />
+						<Label Text="Beni Hatırla"  FontAttributes="Bold" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+						<CheckBox IsChecked="False" Color="Red"/>
+						<Label Text="Önemli kampanyalardan haberdar olmak için Rıza Metni kapsamında elektronik ileti almak istiyorum." />
+					</StackLayout>
+					<StackLayout>
+						<Button Text="Üye Ol" FontAttributes="Bold"  BackgroundColor="Red" TextColor="White"  />
+					</StackLayout>
+					<StackLayout>
+						<Label Text="Kişisel verilerini, Aydınlatma Metni kapsamında işlenmektedir. Üye Ol butonuna basarak Üyelik Sözleşmesi'ni, 'Rıza Metni'ni, 'Gizlilik ve Çerez Politikası'nı kabul ettiğinizi onaylıyorsunuz." />
+					</StackLayout>
+				</StackLayout>
+			</ScrollView>
+		</ContentPage>
+	</TabbedPage.Children>
+</TabbedPage>
