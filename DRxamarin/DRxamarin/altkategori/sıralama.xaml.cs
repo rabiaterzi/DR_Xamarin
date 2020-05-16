@@ -18,7 +18,7 @@ namespace DRxamarin
 		}
 		private async void filtre(object sender, EventArgs e)
 		{
-			await Navigation.PushModalAsync(new filtrele());
+			await Navigation.PushModalAsync(new altkategori());
 		}
 	}
 }

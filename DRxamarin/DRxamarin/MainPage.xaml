@@ -81,8 +81,8 @@
 
 				<StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="300">
 					<StackLayout Orientation="Horizontal"  >
-						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Kırtasiye Ürünleri" />
-						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
+						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="    Kırtasiye Ürünleri" />
+						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster    " />
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
 						<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
@@ -104,8 +104,8 @@
 
 				<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
 					<StackLayout Orientation="Horizontal"  >
-						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Teknoloji" />
-						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
+						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="    Teknoloji" />
+						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster    " />
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
 						<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
@@ -126,8 +126,8 @@
 				</StackLayout>
 				<StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="300">
 					<StackLayout Orientation="Horizontal"  >
-						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Çok Satanlar" />
-						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
+						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="    Çok Satanlar" />
+						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster    " />
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
 						<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
