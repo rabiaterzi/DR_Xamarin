@@ -89,7 +89,7 @@
 						<Label Text="Kategoriler" />
 					</StackLayout>
 					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
-						<Button HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
+						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
 						<Label Text="Keşfet" />
 					</StackLayout>
 					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >

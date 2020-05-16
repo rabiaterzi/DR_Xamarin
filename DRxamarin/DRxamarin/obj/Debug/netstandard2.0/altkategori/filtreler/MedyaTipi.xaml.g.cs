@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.filtrele.xaml", "filtrele.xaml", typeof(global::DRxamarin.filtrele))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.altkategori.filtreler.MedyaTipi.xaml", "altkategori/filtreler/MedyaTipi.xaml", typeof(global::DRxamarin.filtreler.MedyaTipi))]
 
-namespace DRxamarin {
+namespace DRxamarin.filtreler {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("filtrele.xaml")]
-    public partial class filtrele : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("altkategori\\filtreler\\MedyaTipi.xaml")]
+    public partial class MedyaTipi : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(filtrele));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MedyaTipi));
         }
     }
 }

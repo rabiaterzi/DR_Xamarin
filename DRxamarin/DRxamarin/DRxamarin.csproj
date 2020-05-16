@@ -25,28 +25,28 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="altkategori.xaml">
+    <EmbeddedResource Update="altkategori\altkategori.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="arama.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="filtrele.xaml">
+    <EmbeddedResource Update="altkategori\filtrele.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="filtreler\Fiyat.xaml">
+    <EmbeddedResource Update="altkategori\filtreler\Fiyat.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="filtreler\Kategori.xaml">
+    <EmbeddedResource Update="altkategori\filtreler\Kategori.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="filtreler\MedyaTipi.xaml">
+    <EmbeddedResource Update="altkategori\filtreler\MedyaTipi.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="filtreler\Yayınevi.xaml">
+    <EmbeddedResource Update="altkategori\filtreler\Yayınevi.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="filtreler\Yazar.xaml">
+    <EmbeddedResource Update="altkategori\filtreler\Yazar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="kategoriler.xaml">
@@ -58,7 +58,7 @@
     <EmbeddedResource Update="Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="sıralama.xaml">
+    <EmbeddedResource Update="altkategori\sıralama.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="urunayrıntı.xaml">

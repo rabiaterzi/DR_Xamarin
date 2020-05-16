@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.altkategori.xaml", "altkategori.xaml", typeof(global::DRxamarin.altkategori))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.altkategori.filtreler.Yayınevi.xaml", "altkategori/filtreler/Yayınevi.xaml", typeof(global::DRxamarin.filtreler.Yayınevi))]
 
-namespace DRxamarin {
+namespace DRxamarin.filtreler {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("altkategori.xaml")]
-    public partial class altkategori : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("altkategori\\filtreler\\Yayınevi.xaml")]
+    public partial class Yayınevi : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(altkategori));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Yayınevi));
         }
     }
 }

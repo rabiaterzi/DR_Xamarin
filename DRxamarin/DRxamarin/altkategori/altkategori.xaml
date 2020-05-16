@@ -9,8 +9,8 @@
         <StackLayout Orientation="Vertical">
 			<Frame BorderColor="LightGray">
 				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
-					<Button Clicked="kategori" BackgroundColor="Transparent" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Back-icon.png"/>
-					<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="Araştırma-Tarih" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="300"/>
+					<Button Clicked="kategori" BackgroundColor="Transparent" WidthRequest="30" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Back-icon.png"/>
+					<Label Margin="60,0,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="Araştırma-Tarih" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="300"/>
 					<Button Clicked="arama" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/praveen/minimal-outline/96/search-icon.png" HeightRequest="30" WidthRequest="30" />
 					<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
 				</StackLayout>

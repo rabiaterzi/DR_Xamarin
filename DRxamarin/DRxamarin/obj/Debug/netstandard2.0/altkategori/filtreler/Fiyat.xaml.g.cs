@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.filtreler.MedyaTipi.xaml", "filtreler/MedyaTipi.xaml", typeof(global::DRxamarin.filtreler.MedyaTipi))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.altkategori.filtreler.Fiyat.xaml", "altkategori/filtreler/Fiyat.xaml", typeof(global::DRxamarin.filtreler.Fiyat))]
 
 namespace DRxamarin.filtreler {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("filtreler\\MedyaTipi.xaml")]
-    public partial class MedyaTipi : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("altkategori\\filtreler\\Fiyat.xaml")]
+    public partial class Fiyat : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MedyaTipi));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Fiyat));
         }
     }
 }

@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.filtreler.Fiyat.xaml", "filtreler/Fiyat.xaml", typeof(global::DRxamarin.filtreler.Fiyat))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.altkategori.altkategori.xaml", "altkategori/altkategori.xaml", typeof(global::DRxamarin.altkategori))]
 
-namespace DRxamarin.filtreler {
+namespace DRxamarin {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("filtreler\\Fiyat.xaml")]
-    public partial class Fiyat : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("altkategori\\altkategori.xaml")]
+    public partial class altkategori : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Fiyat));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(altkategori));
         }
     }
 }

@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.filtreler.Yazar.xaml", "filtreler/Yazar.xaml", typeof(global::DRxamarin.filtreler.Yazar))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.altkategori.filtrele.xaml", "altkategori/filtrele.xaml", typeof(global::DRxamarin.filtrele))]
 
-namespace DRxamarin.filtreler {
+namespace DRxamarin {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("filtreler\\Yazar.xaml")]
-    public partial class Yazar : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("altkategori\\filtrele.xaml")]
+    public partial class filtrele : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Yazar));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(filtrele));
         }
     }
 }

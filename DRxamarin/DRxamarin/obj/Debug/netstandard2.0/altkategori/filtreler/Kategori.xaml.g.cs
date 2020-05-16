@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.sıralama.xaml", "sıralama.xaml", typeof(global::DRxamarin.sıralama))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("DRxamarin.altkategori.filtreler.Kategori.xaml", "altkategori/filtreler/Kategori.xaml", typeof(global::DRxamarin.filtreler.Kategori))]
 
-namespace DRxamarin {
+namespace DRxamarin.filtreler {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("sıralama.xaml")]
-    public partial class sıralama : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("altkategori\\filtreler\\Kategori.xaml")]
+    public partial class Kategori : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(sıralama));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Kategori));
         }
     }
 }

@@ -8,22 +8,22 @@
 
 
 
-	<StackLayout Orientation="Vertical" > 
+	<StackLayout Orientation="Vertical" >
 		<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="60">
-			    <Button BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" ImageSource="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
-			    <Image Margin="0,0,20,0" HorizontalOptions="Center" Source="https://www.dr.com.tr/Themes/DR/Content/assets/images/general/head-logo.png" HeightRequest="50" WidthRequest="50"/>
-				<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
-			</StackLayout>
-		
-			<StackLayout Orientation="Horizontal"  HeightRequest="40">
-				<SearchBar HorizontalOptions="StartAndExpand" BackgroundColor="White" WidthRequest="320"  Placeholder="Kitap, Müzik, Hobi, Oyuncak" />
-				<Image  HorizontalOptions="CenterAndExpand" Source="https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/barcode-1-128.png" HeightRequest="25"/>
-				<Image HorizontalOptions="EndAndExpand" Source="https://cdn3.iconfinder.com/data/icons/ui-outline-1/100/ui_47-128.png" HeightRequest="25"/>
-			</StackLayout>
+			<Button BackgroundColor="Transparent" HorizontalOptions="StartAndExpand" ImageSource="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
+			<Image Margin="0,0,30,0" HorizontalOptions="Center" Source="https://www.dr.com.tr/Themes/DR/Content/assets/images/general/head-logo.png" HeightRequest="50" WidthRequest="50"/>
+			<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
+		</StackLayout>
 
-			<ScrollView Orientation="Vertical" >
-				<StackLayout Orientation="Vertical">
-				    <StackLayout HeightRequest="200">
+		<StackLayout Orientation="Horizontal"  HeightRequest="40">
+			<SearchBar HorizontalOptions="StartAndExpand" BackgroundColor="White" WidthRequest="320"  Placeholder="Kitap, Müzik, Hobi, Oyuncak" />
+			<Image  HorizontalOptions="CenterAndExpand" Source="https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/barcode-1-128.png" HeightRequest="25"/>
+			<Image HorizontalOptions="EndAndExpand" Source="https://cdn3.iconfinder.com/data/icons/ui-outline-1/100/ui_47-128.png" HeightRequest="25"/>
+		</StackLayout>
+
+		<ScrollView Orientation="Vertical" >
+			<StackLayout Orientation="Vertical">
+				<StackLayout HeightRequest="200">
 					<cv:CarouselViewControl Orientation="Horizontal" InterPageSpacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
 											ShowIndicators="True" AnimateTransition="True" HeightRequest="180">
 						<cv:CarouselViewControl.ItemsSource>
@@ -47,154 +47,150 @@
 							</x:Array>
 						</cv:CarouselViewControl.ItemsSource>
 					</cv:CarouselViewControl>
-				    </StackLayout>
+				</StackLayout>
 
-				    <StackLayout Orientation="Horizontal" BackgroundColor="#f3f1f1" HeightRequest="35" Padding="7">
-						<Button Text="Oyuncaklar" BackgroundColor="Red" TextColor="White" HorizontalOptions="StartAndExpand"/>
-						<Button Text="Elektronik" BackgroundColor="Blue" TextColor="White" HorizontalOptions="Center"/>
-						<Button Text="Yeni Çıkanlar" BackgroundColor="Orange" TextColor="White" HorizontalOptions="EndAndExpand"/>
+				<StackLayout Orientation="Horizontal" BackgroundColor="#f3f1f1" HeightRequest="35" Padding="7">
+					<Button Text="Oyuncaklar" BackgroundColor="Red" TextColor="White" HorizontalOptions="StartAndExpand" WidthRequest="120"/>
+					<Button Text="Elektronik" BackgroundColor="Blue" TextColor="White" HorizontalOptions="Center" WidthRequest="120"/>
+					<Button Text="Yeni Çıkanlar" BackgroundColor="Orange" TextColor="White" HorizontalOptions="EndAndExpand" WidthRequest="120"/>
+				</StackLayout>
+
+				<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
+					<StackLayout Orientation="Horizontal" >
+						<Label HorizontalOptions="StartAndExpand" FontSize="17"  Text="   Öne Çıkan Kitaplar" />
+						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster    " />
 					</StackLayout>
-
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
-						<StackLayout Orientation="Horizontal" >
-							<Label HorizontalOptions="StartAndExpand" FontSize="17"  Text="Öne Çıkan Kitaplar" />
-							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
-						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="White">
-							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-								<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding onecikanlar}" VerticalOptions="Start" >
+					<StackLayout Orientation="Horizontal" BackgroundColor="White">
+						<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
+							<StackLayout Orientation="Horizontal" Spacing="10" BindableLayout.ItemsSource="{Binding onecikanlar}" VerticalOptions="Start" >
 								<BindableLayout.ItemTemplate>
 									<DataTemplate>
-										<StackLayout VerticalOptions="Start">
-											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
+										<StackLayout VerticalOptions="Start" Margin="10,0,0,0">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
 												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
 											</Frame>
-											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-											<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-										</StackLayout>
-									</DataTemplate>
-								</BindableLayout.ItemTemplate>
-								</StackLayout>
-							</ScrollView>
-						</StackLayout>
-					</StackLayout>
-
-				    <StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="300">
-						<StackLayout Orientation="Horizontal"  >
-							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Kırtasiye Ürünleri" />
-							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
-						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
-							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-							<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding Kirtasiye}" VerticalOptions="Start" >
-								<BindableLayout.ItemTemplate>
-									<DataTemplate>
-										<StackLayout VerticalOptions="Start">
-											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
-												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-											</Frame>
-											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+											<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
 										</StackLayout>
 									</DataTemplate>
 								</BindableLayout.ItemTemplate>
 							</StackLayout>
 						</ScrollView>
-						</StackLayout>
-					</StackLayout>
-
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
-						<StackLayout Orientation="Horizontal"  >
-							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Teknoloji" />
-							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
-						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
-							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-							<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding Teknoloji}" VerticalOptions="Start" >
-								<BindableLayout.ItemTemplate>
-									<DataTemplate>
-										<StackLayout VerticalOptions="Start">
-											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
-												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-											</Frame>
-											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-										</StackLayout>
-									</DataTemplate>
-								</BindableLayout.ItemTemplate>
-							</StackLayout>
-						</ScrollView>
-						</StackLayout>
-					</StackLayout>
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
-						<StackLayout Orientation="Horizontal"  >
-							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Çok Satanlar" />
-							<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
-						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
-							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-							<StackLayout Orientation="Horizontal" Spacing="20" BindableLayout.ItemsSource="{Binding Coksatanlar}" VerticalOptions="Start" >
-								<BindableLayout.ItemTemplate>
-									<DataTemplate>
-										<StackLayout VerticalOptions="Start">
-											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="250" WidthRequest="150">
-												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-											</Frame>
-											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-											<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-										</StackLayout>
-									</DataTemplate>
-								</BindableLayout.ItemTemplate>
-							</StackLayout>
-						</ScrollView>
-						</StackLayout>
-					</StackLayout>
-
-					<StackLayout Orientation="Vertical">
-						<StackLayout >
-							<Label FontSize="17" Text="BAŞKA NELER VAR" />
-						</StackLayout>
-						<StackLayout>
-							<Grid>
-								<Grid.ColumnDefinitions>
-									<ColumnDefinition Width="*" />
-									<ColumnDefinition Width="*" />
-								</Grid.ColumnDefinitions>
-								<Grid.RowDefinitions>
-									<RowDefinition Height="*" />
-									<RowDefinition Height="*" />
-								</Grid.RowDefinitions>
-							    <Image  Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/nisan-kitap/nisan-kitap-1_09.jpg" Grid.Row="0" Grid.Column="0"  />
-							    <Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/nisan-kitap/nisan-kitap-1_05.jpg" Grid.Row="0" Grid.Column="1" />
-							    <Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/ramazan/ramazan-5.jpg" Grid.Row="1" Grid.Column="0"  />
-							    <Image Source="https://www.gununfirsati.com/imgcamp/dr-20200114-1333.jpg" Grid.Row="1" Grid.Column="1" />
-							</Grid>
-						</StackLayout>
 					</StackLayout>
 				</StackLayout>
-			</ScrollView>
 
-			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3">
-				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
-				    <StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
+				<StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="300">
+					<StackLayout Orientation="Horizontal"  >
+						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Kırtasiye Ürünleri" />
+						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+						<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
+							<StackLayout Orientation="Horizontal" Spacing="10" BindableLayout.ItemsSource="{Binding Kirtasiye}" VerticalOptions="Start" >
+								<BindableLayout.ItemTemplate>
+									<DataTemplate>
+										<StackLayout VerticalOptions="Start" Margin="10,0,0,0">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
+												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+										</StackLayout>
+									</DataTemplate>
+								</BindableLayout.ItemTemplate>
+							</StackLayout>
+						</ScrollView>
+					</StackLayout>
+				</StackLayout>
+
+				<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="300">
+					<StackLayout Orientation="Horizontal"  >
+						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Teknoloji" />
+						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+						<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
+							<StackLayout Orientation="Horizontal" Spacing="10" BindableLayout.ItemsSource="{Binding Teknoloji}" VerticalOptions="Start" >
+								<BindableLayout.ItemTemplate>
+									<DataTemplate>
+										<StackLayout VerticalOptions="Start" Margin="10,0,0,0">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
+												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+										</StackLayout>
+									</DataTemplate>
+								</BindableLayout.ItemTemplate>
+							</StackLayout>
+						</ScrollView>
+					</StackLayout>
+				</StackLayout>
+				<StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" HeightRequest="300">
+					<StackLayout Orientation="Horizontal"  >
+						<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Çok Satanlar" />
+						<Label HorizontalOptions="EndAndExpand" TextColor="DarkBlue"  Text="Tümünü Göster" />
+					</StackLayout>
+					<StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+						<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
+							<StackLayout Orientation="Horizontal" Spacing="10" BindableLayout.ItemsSource="{Binding Coksatanlar}" VerticalOptions="Start" >
+								<BindableLayout.ItemTemplate>
+									<DataTemplate>
+										<StackLayout VerticalOptions="Start" Margin="10,0,0,0">
+											<Frame Padding="0" HorizontalOptions="Start" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
+												<Button Clicked="ayrıntısayfası" BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+											<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150"/>
+										</StackLayout>
+									</DataTemplate>
+								</BindableLayout.ItemTemplate>
+							</StackLayout>
+						</ScrollView>
+					</StackLayout>
+				</StackLayout>
+
+				<StackLayout Orientation="Vertical">
+					<StackLayout >
+						<Label FontSize="17" Text="BAŞKA NELER VAR" />
+					</StackLayout>
+					<StackLayout>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*" />
+								<ColumnDefinition Width="*" />
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="*" />
+								<RowDefinition Height="*" />
+							</Grid.RowDefinitions>
+							<Image  Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/nisan-kitap/nisan-kitap-1_09.jpg" Grid.Row="0" Grid.Column="0"  />
+							<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/nisan-kitap/nisan-kitap-1_05.jpg" Grid.Row="0" Grid.Column="1" />
+							<Image Source="https://i.dr.com.tr/pimages/Content/Uploads/LandingPage/ramazan/ramazan-5.jpg" Grid.Row="1" Grid.Column="0"  />
+							<Image Source="https://www.gununfirsati.com/imgcamp/dr-20200114-1333.jpg" Grid.Row="1" Grid.Column="1" />
+						</Grid>
+					</StackLayout>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+
+		<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3">
+			<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
+				<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
 					<Button ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
-					    <Label  Text="Ana Sayfa" />
-					</StackLayout>
-					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
-					<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
-						<Label Text="Kategoriler" />
-					</StackLayout>
-					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
-						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
-						<Label Text="Keşfet" />
-					</StackLayout>
-					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
-					<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
-						<Label Text="Sepet" />
-					</StackLayout>
+					<Label  Text="Ana Sayfa" />
 				</StackLayout>
-			</Frame>
-
-
-		</StackLayout>
-
-	
+				<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+					<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
+					<Label Text="Kategoriler" />
+				</StackLayout>
+				<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+					<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
+					<Label Text="Keşfet" />
+				</StackLayout>
+				<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
+					<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
+					<Label Text="Sepet" />
+				</StackLayout>
+			</StackLayout>
+		</Frame>
+	</StackLayout>
 </ContentPage>
