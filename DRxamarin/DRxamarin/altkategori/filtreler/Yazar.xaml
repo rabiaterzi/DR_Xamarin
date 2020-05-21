@@ -16,35 +16,35 @@
 			<SearchBar Placeholder="Yazar ara..."/>
 			<ScrollView Orientation="Vertical">
 				<StackLayout Orientation="Vertical">
-					<Button Text="Kolektif (1118)" BackgroundColor="Transparent" Margin="0,0,190,0"/>
+					<Button Text="Kolektif (1118)" BackgroundColor="Transparent" Margin="0,0,190,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Mustafa Kemal Atatürk (133)" BackgroundColor="Transparent" Margin="0,0,95,0"/>
+					<Button Text="Mustafa Kemal Atatürk (133)" BackgroundColor="Transparent" Margin="0,0,95,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Yunus Karaaslan (103)" BackgroundColor="Transparent" Margin="0,0,135,0"/>
+					<Button Text="Yunus Karaaslan (103)" BackgroundColor="Transparent" Margin="0,0,135,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Mustafa Karagüllüoğlu (89)" BackgroundColor="Transparent" Margin="0,0,105,0"/>
+					<Button Text="Mustafa Karagüllüoğlu (89)" BackgroundColor="Transparent" Margin="0,0,105,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Sercan Arslan (78)" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Button Text="Sercan Arslan (78)" BackgroundColor="Transparent" Margin="0,0,160,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Celal Coşkun (71)" BackgroundColor="Transparent" Margin="0,0,165,0"/>
+					<Button Text="Celal Coşkun (71)" BackgroundColor="Transparent" Margin="0,0,165,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Mustafa Küpüşoğlu (60)" BackgroundColor="Transparent" Margin="0,0,120,0"/>
+					<Button Text="Mustafa Küpüşoğlu (60)" BackgroundColor="Transparent" Margin="0,0,120,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Ahmet Üzümcüoğlu (58)" BackgroundColor="Transparent" Margin="0,0,122,0"/>
+					<Button Text="Ahmet Üzümcüoğlu (58)" BackgroundColor="Transparent" Margin="0,0,122,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Ziya Gökalp (52)" BackgroundColor="Transparent" Margin="0,0,170,0"/>
+					<Button Text="Ziya Gökalp (52)" BackgroundColor="Transparent" Margin="0,0,170,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Adem Şenel (47)" BackgroundColor="Transparent" Margin="0,0,175,0"/>
+					<Button Text="Adem Şenel (47)" BackgroundColor="Transparent" Margin="0,0,175,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Mahmut Arlı (45)" BackgroundColor="Transparent" Margin="0,0,170,0"/>
+					<Button Text="Mahmut Arlı (45)" BackgroundColor="Transparent" Margin="0,0,170,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Orhan Türkdoğan (44)" BackgroundColor="Transparent" Margin="0,0,135,0"/>
+					<Button Text="Orhan Türkdoğan (44)" BackgroundColor="Transparent" Margin="0,0,135,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Karl Marx (41)" BackgroundColor="Transparent" Margin="0,0,185,0"/>
+					<Button Text="Karl Marx (41)" BackgroundColor="Transparent" Margin="0,0,185,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Ali Kuzu (38)" BackgroundColor="Transparent" Margin="0,0,200,0"/>
+					<Button Text="Ali Kuzu (38)" BackgroundColor="Transparent" Margin="0,0,200,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="İlber Ortaylı (36)" BackgroundColor="Transparent" Margin="0,0,170,0"/>
+					<Button Text="İlber Ortaylı (36)" BackgroundColor="Transparent" Margin="0,0,170,0" Clicked="kirmizi" TextColor="Black"/>
 				</StackLayout>
 			</ScrollView>
 			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White"/>

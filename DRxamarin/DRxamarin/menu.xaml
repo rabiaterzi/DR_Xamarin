@@ -1,15 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="DRxamarin.Menu">
-	<MasterDetailPage.Master>
-	<ContentPage Title="MenuPage">
-        <StackLayout>
-				<Label Text="hello"/>
+    <ContentPage.Content>
+		<StackLayout >
+			<ScrollView Orientation="Vertical" BackgroundColor="White" >
+				<StackLayout Orientation="Vertical" Padding="10" >
+					<StackLayout Orientation="Horizontal"  HeightRequest="80" Spacing="40" >
+						<Image WidthRequest="50" HeightRequest="50" Source="https://img.icons8.com/ultraviolet/2x/change-user-male.png" />
+						<Button Clicked="uye" Text="Giriş Yap" FontAttributes="Bold"  BackgroundColor="Transparent" BorderWidth="50"  TextColor="DarkBlue"  FontSize="Large" VerticalOptions="CenterAndExpand"  />
+						<ImageButton Clicked="anasayfa" BackgroundColor="Transparent" HeightRequest="30" WidthRequest="30" Source="https://img.icons8.com/ultraviolet/2x/double-left.png" HorizontalOptions="EndAndExpand" />
+					</StackLayout>
+					<StackLayout Orientation="Vertical" Spacing="20" Padding="15">
+
+						<StackLayout Orientation="Horizontal" Spacing="20" >
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/person-male.png" />
+							<Label Text="Hesabım" TextColor="#3b3b3b" FontSize="Medium" />
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton  BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/box.png" />
+							<Label Text="Siparişlerim" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton  BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/book-shelf.png" />
+							<Label Text="Kütüphanem" TextColor="#3b3b3b" FontSize="Medium" />
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/edit-property.png" />
+							<Label Text="Listelerim" TextColor="#3b3b3b" FontSize="Medium" />
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/pencil-tip.png" />
+							<Label Text="Yazarlar" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/magical-scroll.png" />
+							<Label Text="Yayınevleri" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/alarm.png" />
+							<Label Text="Kampanyalar" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/gift.png" />
+							<Label Text="Hediye Kartı" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+						
+						<Label HeightRequest="1" WidthRequest="325" BackgroundColor="Gray"/>
+						
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/search.png" />
+							<Label Text="Mağaza Ara" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+						
+						<Label HeightRequest="1" WidthRequest="325" BackgroundColor="Gray"/>
+						
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/lifebuoy.png" />
+							<Label Text="Yardım ve Destek" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+
+						<StackLayout Orientation="Horizontal" Spacing="20">
+							<ImageButton BackgroundColor="Transparent" HeightRequest="25" WidthRequest="25" Source="https://img.icons8.com/ultraviolet/2x/settings.png" />
+							<Label Text="Ayarlar" TextColor="#3b3b3b" FontSize="Medium"/>
+						</StackLayout>
+					</StackLayout>
+				</StackLayout>
+			</ScrollView>
 		</StackLayout>
-    </ContentPage>
-	</MasterDetailPage.Master>
-</MasterDetailPage>
+	</ContentPage.Content>
+</ContentPage>

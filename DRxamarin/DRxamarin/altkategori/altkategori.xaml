@@ -33,12 +33,12 @@
 				<Button Clicked="sırala" HorizontalOptions="CenterAndExpand" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Up-Down-3-icon.png" BackgroundColor="Transparent" Text="Sırala"/>
 			</StackLayout>
 			<ScrollView VerticalOptions="FillAndExpand" Orientation="Vertical">
-				<Grid Margin="0,20,0,0">
+				<Grid BackgroundColor="White">
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition Width="200"/>
 						<ColumnDefinition Width="200"/>
 					</Grid.ColumnDefinitions>
-					<StackLayout Orientation="Vertical" Spacing="35" BindableLayout.ItemsSource="{Binding Arastırmatarih}" VerticalOptions="Start" WidthRequest="200" Grid.Column="0">
+					<!--<StackLayout Orientation="Vertical" Spacing="35" BindableLayout.ItemsSource="{Binding Arastırmatarih}" VerticalOptions="Start" WidthRequest="200" Grid.Column="0">
 						<BindableLayout.ItemTemplate>
 							<DataTemplate>
 								<StackLayout VerticalOptions="Start" Margin="10,0,0,0" WidthRequest="200">
@@ -56,35 +56,62 @@
 								</StackLayout>
 							</DataTemplate>
 						</BindableLayout.ItemTemplate>
-					</StackLayout>
-					<StackLayout Orientation="Vertical" Spacing="35" BindableLayout.ItemsSource="{Binding Arastırmatarih2}" VerticalOptions="Start" WidthRequest="200" Grid.Column="1">
-						<BindableLayout.ItemTemplate>
-							<DataTemplate>
-								<StackLayout VerticalOptions="Start" Margin="10,0,0,0" WidthRequest="200">
-									<Frame Padding="0" HorizontalOptions="Center" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
-										<Button BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
-									</Frame>
-									<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
-									<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
-									<Image Source="https://pngimage.net/wp-content/uploads/2018/06/rating-star-png-transparent-3.png" HeightRequest="20" HorizontalOptions="Center"/>
-									<StackLayout Orientation="Horizontal">
-										<Label TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" BackgroundColor="#ff242d" HeightRequest="33" WidthRequest="40" Text="{Binding Discount}"/>
-										<Label HorizontalOptions="CenterAndExpand" TextColor="Black" BackgroundColor="Transparent" Text="{Binding Price}" VerticalOptions="Center"/>
+					</StackLayout>-->
+					<StackLayout Orientation="Vertical" Spacing="35" WidthRequest="200" Grid.Column="0" BackgroundColor="White">
+						<ListView ItemsSource="{Binding Arastırmatarih}" SeparatorVisibility="None" ItemTapped="ListView_ItemTapped" HasUnevenRows="True" >
+							<ListView.ItemTemplate>
+								<DataTemplate>
+									<ViewCell>
+									<StackLayout VerticalOptions="Start" Margin="10,30,0,0" WidthRequest="200" BackgroundColor="White">
+										<Frame Padding="0" HorizontalOptions="Center" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
+											<Button BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+										</Frame>
+										<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
+										<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
+										<Image Source="https://pngimage.net/wp-content/uploads/2018/06/rating-star-png-transparent-3.png" HeightRequest="20" HorizontalOptions="Center"/>
+										<StackLayout Orientation="Horizontal">
+											<Label TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" BackgroundColor="#ff242d" HeightRequest="33" WidthRequest="40" Text="{Binding Discount}"/>
+											<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" Text="{Binding Price}" TextColor="Black"/>
+										</StackLayout>
+										<Button Margin="0,12,0,0" Text="SEPETE EKLE" HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" TextColor="Black" BorderWidth="1" WidthRequest="150"/>
 									</StackLayout>
-									<Button Margin="0,12,0,0" Text="SEPETE EKLE" HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" TextColor="Black" BorderWidth="1" WidthRequest="150"/>
-								</StackLayout>
-							</DataTemplate>
-						</BindableLayout.ItemTemplate>
+									</ViewCell>
+								</DataTemplate>
+							</ListView.ItemTemplate>
+						</ListView>
+					</StackLayout>
+					<StackLayout Orientation="Vertical" Spacing="35" WidthRequest="200" Grid.Column="1" BackgroundColor="White">
+						<ListView ItemsSource="{Binding Arastırmatarih2}" SeparatorVisibility="None" ItemTapped="ListView_ItemTapped" HasUnevenRows="True" >
+							<ListView.ItemTemplate>
+								<DataTemplate>
+									<ViewCell>
+										<StackLayout VerticalOptions="Start" Margin="10,30,0,0" WidthRequest="200" BackgroundColor="White">
+											<Frame Padding="0" HorizontalOptions="Center" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
+												<Button BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+											</Frame>
+											<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
+											<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
+											<Image Source="https://pngimage.net/wp-content/uploads/2018/06/rating-star-png-transparent-3.png" HeightRequest="20" HorizontalOptions="Center"/>
+											<StackLayout Orientation="Horizontal">
+												<Label TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" BackgroundColor="#ff242d" HeightRequest="33" WidthRequest="40" Text="{Binding Discount}"/>
+												<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" Text="{Binding Price}" TextColor="Black"/>
+											</StackLayout>
+											<Button Margin="0,12,0,0" Text="SEPETE EKLE" HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" TextColor="Black" BorderWidth="1" WidthRequest="150"/>
+										</StackLayout>
+									</ViewCell>
+								</DataTemplate>
+							</ListView.ItemTemplate>
+						</ListView>
 					</StackLayout>
 				</Grid>
 			</ScrollView>
 			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3" >
 				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
-					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" Margin="10,0,0,0" >
 						<Button Clicked="anasayfa" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
 						<Label  Text="Ana Sayfa" />
 					</StackLayout>
-					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical" Margin="0,0,10,0">
 						<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Kategoriler" />
 					</StackLayout>
@@ -92,7 +119,7 @@
 						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
 						<Label Text="Keşfet" />
 					</StackLayout>
-					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical" Margin="0,0,15,0" >
 						<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Sepet" />
 					</StackLayout>

@@ -1,17 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "spWLdqQ5ozft8ffe877Af9sUFey1yTTjc3XQiiaHG2o7tf6bpHSvE6npSzZbIR9TDjEDkGRIlBeMRMzXcKzjVA==",
+  "dgSpecHash": "iXtl4G/Wj7rSn6q/28jubRctBqvcNdjFw/CLKmhm6IW8Ku3n0XW7at3B4asQHeBYSLrFFKOXQtNcGk/8+DlaCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\terzi\\source\\repos\\DRxamarin\\DRxamarin\\DRxamarin\\DRxamarin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\terzi\\.nuget\\packages\\carouselview.formsplugin\\5.2.0\\carouselview.formsplugin.5.2.0.nupkg.sha512",
+    "C:\\Users\\terzi\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\terzi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\terzi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\terzi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\terzi\\.nuget\\packages\\restsharp\\106.11.3\\restsharp.106.11.3.nupkg.sha512",
+    "C:\\Users\\terzi\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\terzi\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
     "C:\\Users\\terzi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\terzi\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\terzi\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512"
+    "C:\\Users\\terzi\\.nuget\\packages\\xamarin.forms\\4.6.0.800\\xamarin.forms.4.6.0.800.nupkg.sha512"
   ],
   "logs": []
 }

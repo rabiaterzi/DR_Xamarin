@@ -8,12 +8,12 @@
     <ContentPage.Content>
 		<StackLayout Orientation="Vertical">
 			<Frame BorderColor="LightGray">
-			<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
-				<Image HorizontalOptions="StartAndExpand" Source="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
-				<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="Kategoriler" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
-				<Button Clicked="arama" BackgroundColor="Transparent" Margin="120,0,0,0" ImageSource="http://icons.iconarchive.com/icons/praveen/minimal-outline/96/search-icon.png" HeightRequest="30" WidthRequest="30" />
-				<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
-			</StackLayout>
+				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
+					<Image HorizontalOptions="StartAndExpand" Source="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
+					<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="Kategoriler" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
+					<Button Clicked="arama" BackgroundColor="Transparent" Margin="120,0,0,0" ImageSource="http://icons.iconarchive.com/icons/praveen/minimal-outline/96/search-icon.png" HeightRequest="30" WidthRequest="30" />
+					<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
+				</StackLayout>
 			</Frame>
 			<Grid>
 				<Grid.ColumnDefinitions>
@@ -24,94 +24,80 @@
 					<ScrollView Orientation="Vertical" >
 						<StackLayout Orientation="Vertical">
 							<StackLayout Orientation="Vertical" HeightRequest="80" BackgroundColor="#f3f1f1" WidthRequest="105">
-								<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/pixelkit/swanky-outlines/72/05-Bookmark-Book-icon.png"/>
+								<Button Clicked="kitap" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/pixelkit/swanky-outlines/72/05-Bookmark-Book-icon.png"/>
 								<Label Text="Kitap" TextColor="Black" HorizontalOptions="Center"/>
 							</StackLayout>
 							<StackLayout Orientation="Vertical" HeightRequest="80">
-								<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Music-Note-2-icon.png"/>
+								<Button Clicked="müzik" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Music-Note-2-icon.png"/>
 								<Label Text="Müzik" TextColor="Black" HorizontalOptions="Center"/>
 							</StackLayout>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Video-4-icon.png"/>
+							<Button Clicked="film" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Video-4-icon.png"/>
 							<Label  Text="Film" TextColor="Black" HorizontalOptions="Center"/>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Photo-Video-Slr-Camera-2-icon.png"/>
+							<Button Clicked="elektronik" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Photo-Video-Slr-Camera-2-icon.png"/>
 							<Label Text="Elektronik" TextColor="Black" HorizontalOptions="Center"/>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/pixelkit/gentle-edges/72/Game-Controller-icon.png"/>
+							<Button Clicked="oyun" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/pixelkit/gentle-edges/72/Game-Controller-icon.png"/>
 							<Label Text="Oyun &amp; &#10;Konsol" TextColor="Black" HorizontalOptions="Center"/>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Transport-Cars-icon.png"/>
+							<Button Clicked="hobi" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Transport-Cars-icon.png"/>
 							<Label Text="Hobi &amp; &#10;Oyuncak" TextColor="Black" HorizontalOptions="Center"/>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Pencil-Ruler-icon.png"/>
+							<Button Clicked="kırtasiye" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Pencil-Ruler-icon.png"/>
 							<Label Text="Kırtasiye" TextColor="Black" HorizontalOptions="Center"/>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Email-icon.png"/>
+							<Button Clicked="kisisel" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Email-icon.png"/>
 							<Label Text="Kişisel &#10;Ürünler" TextColor="Black" HorizontalOptions="Center"/>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Tablet-icon.png"/>
+							<Button Clicked="ekitap" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/72/Tablet-icon.png"/>
 							<Label Text="E-Kitap" TextColor="Black" HorizontalOptions="Center"/>
-							<Button BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/roundicons/100-free-solid/72/hiking-icon.png"/>
+							<Button Clicked="spor" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/roundicons/100-free-solid/72/hiking-icon.png"/>
 							<Label Text="Spor &amp; &#10;Outdoor" TextColor="Black" HorizontalOptions="Center"/>
 						</StackLayout>
 					</ScrollView>
 				</Frame>
 				<StackLayout Orientation="Vertical" BackgroundColor="#f3f1f1" Grid.Column="1">
 					<StackLayout BackgroundColor="White">
-						<Label Text="Kitap" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="30" BackgroundColor="White" HeightRequest="80" WidthRequest="278"/>
-						<Label Text="Tüm Kitap" VerticalTextAlignment="Center" TextColor="Black" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+						<Label x:Name="A" Text="Kitap" VerticalTextAlignment="Center" FontAttributes="Bold" TextColor="Black" FontSize="30" BackgroundColor="White" HeightRequest="80" WidthRequest="278"/>
+						<Label x:Name="B" Text="Tüm Kitap" VerticalTextAlignment="Center" TextColor="Black" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
 					</StackLayout>
 					<ScrollView Orientation="Vertical">
 						<StackLayout Orientation="Vertical">
-							<Button Clicked="altkategorii" Text="Araştırma-Tarih" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray" BackgroundColor="White" HeightRequest="55" WidthRequest="300"/>
-						    <Label Text="Bilim" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="300"/>
-							<Label Text="Çizgi Roman"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Çocuk ve Gençlik"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Ders/Sınav Kitapları"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Din Tasavvuf"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Edebiyat"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Eğitim Başvuru"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Felsefe"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Foreign Languages"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Hobi"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Mitoloji Efsane"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Mizah"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Prestij Kitapları"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Sanat-Tasarım"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-							<Label Text="Sesli Kitaplar"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
-					</StackLayout>
+							<Button x:Name="a1" Clicked="altkategorii" Text="Araştırma-Tarih" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278" TextColor="Gray"/>
+							<Label x:Name="a2" Text="Bilim" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a3" Text="Çizgi Roman" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a4" Text="Çocuk ve Gençlik" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a5" Text="Ders/Sınav Kitapları" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a6" Text="Din Tasavvuf" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a7" Text="Edebiyat" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a8" Text="Eğitim Başvuru" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a9" Text="Felsefe" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a10" Text="Foreign Languages" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a11" Text="Hobi" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a12" Text="Mitoloji Efsane" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a13" Text="Mizah" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a14" Text="Prestij Kitapları" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a15" Text="Sanat-Tasarım" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+							<Label x:Name="a16" Text="Sesli Kitaplar" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" BackgroundColor="White" HeightRequest="55" WidthRequest="278"/>
+						</StackLayout>
 					</ScrollView>
 				</StackLayout>
 
 			</Grid>
 			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3" >
 				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
-					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" Margin="10,0,0,0" >
 						<Button Clicked="anasayfa" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
 						<Label  Text="Ana Sayfa" />
 					</StackLayout>
-					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical" Margin="0,0,10,0" >
 						<Button HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Kategoriler" />
 					</StackLayout>
 					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
-						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
+						<Button HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
 						<Label Text="Keşfet" />
 					</StackLayout>
-					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical" Margin="0,0,15,0" >
 						<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Sepet" />
 					</StackLayout>
 				</StackLayout>
 			</Frame>
 		</StackLayout>
-		
-		<!--<StackLayout>
-			<ListView x:Name="kategorilerr">
-				<ListView.ItemTemplate>
-					<DataTemplate>
-						<ViewCell>
-							<StackLayout>
-								<Label Text="{Binding Name}" />
-							</StackLayout>
-						</ViewCell>
-					</DataTemplate>
-				</ListView.ItemTemplate>
-			</ListView>
-		</StackLayout>-->
 	</ContentPage.Content>
 </ContentPage>

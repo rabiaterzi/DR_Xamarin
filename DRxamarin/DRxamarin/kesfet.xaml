@@ -9,8 +9,8 @@
 		<StackLayout>
 			<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="60">
 				<Image HorizontalOptions="StartAndExpand" Source="https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-128.png"/>
-				<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="Keşfet" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
-				<Button Clicked="arama" BackgroundColor="Transparent" Margin="180,0,0,0" ImageSource="http://icons.iconarchive.com/icons/praveen/minimal-outline/96/search-icon.png" HeightRequest="30" WidthRequest="30" />
+				<Label HorizontalOptions="CenterAndExpand" Margin="120,0,0,0" VerticalOptions="Center" Text="Keşfet" FontSize="Title" TextColor="Black" FontAttributes="Bold" />
+				<Button Clicked="arama" BackgroundColor="Transparent" Margin="80,0,0,0" ImageSource="http://icons.iconarchive.com/icons/praveen/minimal-outline/96/search-icon.png" HeightRequest="30" WidthRequest="30" />
 				<Image HorizontalOptions="EndAndExpand" Source="https://cdn1.iconfinder.com/data/icons/arrows-elements-outline/128/ic_bell_alarm-128.png" WidthRequest="30" HeightRequest="30" />
 			</StackLayout>
 			<ScrollView Orientation="Vertical">
@@ -22,11 +22,11 @@
 			</ScrollView>
 			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3">
 				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
-					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" Margin="10,0,0,0" >
 						<Button Clicked="anasayfa" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
 						<Label  Text="Ana Sayfa" />
 					</StackLayout>
-					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical" Margin="0,0,10,0">
 						<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Kategoriler" />
 					</StackLayout>
@@ -34,7 +34,7 @@
 						<Button HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
 						<Label Text="Keşfet" />
 					</StackLayout>
-					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical"  >
+					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical" Margin="0,0,15,0" >
 						<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
 						<Label Text="Sepet" />
 					</StackLayout>

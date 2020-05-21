@@ -8,42 +8,42 @@
 	<ContentPage.Content>
 		<StackLayout BackgroundColor="White" Spacing="10">
 			<StackLayout Orientation="Horizontal"  HeightRequest="50" Spacing="0" >
-				<ImageButton  Source="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_back_48px-128.png" BackgroundColor="Transparent" HeightRequest="30" WidthRequest="30" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
-				<Label Text="Yayınevi" FontSize="Large" TextColor="Blue" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-				<ImageButton  Source="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" BackgroundColor="Transparent" HeightRequest="40"    VerticalOptions="CenterAndExpand"  />
+				<ImageButton  Clicked="anasayfa" Source="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_back_48px-128.png" BackgroundColor="Transparent" HeightRequest="30" WidthRequest="30" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"  />
+				<Label Margin="0,0,25,0" x:Name="yayınevi" Text="Yayınevi" FontSize="Large" TextColor="#0000cd" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontAttributes="Bold"/>
+				<ImageButton Clicked="arama" Source="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png" BackgroundColor="Transparent" HeightRequest="40"    VerticalOptions="CenterAndExpand"  />
 				<ImageButton  Source="https://cdn1.iconfinder.com/data/icons/hawcons/32/698436-icon-31-book-bookmark-512.png" BackgroundColor="Transparent" HeightRequest="40"   VerticalOptions="CenterAndExpand"   />
 			</StackLayout>
 			<ScrollView Orientation="Vertical">
 				<StackLayout Orientation="Vertical">
 					<StackLayout HeightRequest="50">
-						<Label Text="Kitap Adı" FontSize="Large" TextColor="#3b3b3b"  HorizontalOptions="CenterAndExpand" />
+						<Label x:Name="ad" Text="Kitap Adı" FontSize="Large" TextColor="#3b3b3b"  HorizontalOptions="CenterAndExpand" />
 					</StackLayout>
 					<StackLayout >
-						<ImageButton Source="https://i.dr.com.tr/cache/154x170-0/originals/0001870867001-1.jpg"  BackgroundColor="Transparent" HeightRequest="250" Aspect="AspectFit" />
+						<ImageButton x:Name="foto" Source="https://i.dr.com.tr/cache/154x170-0/originals/0001870867001-1.jpg"  BackgroundColor="Transparent" HeightRequest="250" Aspect="AspectFit" />
 					</StackLayout>
 					<StackLayout Padding="20">
 						<Image Source="https://pngimage.net/wp-content/uploads/2018/06/rating-star-png-transparent-3.png" HeightRequest="20" />
 					</StackLayout>
 					<StackLayout>
-						<Label Text="Yazar Adı" TextColor="Blue" HorizontalOptions="CenterAndExpand"/>
+						<Label x:Name="yazarad" Text="Yazar Adı" TextColor="#0000cd" HorizontalOptions="CenterAndExpand"/>
 					</StackLayout>
 					<StackLayout Padding="10">
 						<Frame BorderColor="#cdc1c5"  HeightRequest="15" >
 							<StackLayout Orientation="Horizontal" >
-								<Label Text="Ürün Formatı:" TextColor="#3b3b3b"  />
-								<Label Text="İnce Kapak" TextColor="#3b3b3b" FontAttributes="Bold"  />
+								<Label Text="Ürün Formatı:" TextColor="#3b3b3b" />
+								<Label Text="İnce Kapak" TextColor="#3b3b3b" FontAttributes="Bold" x:Name="kapakturu" />
 							</StackLayout>
 						</Frame>
 					</StackLayout>
 					<StackLayout HeightRequest="140" BackgroundColor="#f6f6f6">
 						<StackLayout Orientation="Horizontal" HeightRequest="70" Padding="10">
 							<Label Text="Fiyat" FontSize="Title"   TextColor="#3b3b3b" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
-							<Label Text="%30 İndirim" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" />
-							<Label Text="22," FontSize="30" FontAttributes="Bold" TextColor="#3b3b3b" VerticalOptions="CenterAndExpand" />
-							<Label Text="40 TL" FontAttributes="Bold" TextColor="#3b3b3b" VerticalOptions="StartAndExpand" />
+							<Label x:Name="indirim" Margin="185,0,0,0" Text="%30" TextColor="#0000cd" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" />
+							<Label Text="İndirim" TextColor="#0000cd" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" />
+							<Label x:Name="fiyat" Text="22," FontSize="30" FontAttributes="Bold" TextColor="#3b3b3b" VerticalOptions="CenterAndExpand" />
 						</StackLayout>
 						<StackLayout Padding="10">
-							<Button Text="Sepete Ekle" BackgroundColor="Red" TextColor="White"  FontAttributes="Bold" HeightRequest="40"/>
+							<Button Clicked="sepet" Text="SEPETE EKLE" BackgroundColor="Red" TextColor="White"  FontAttributes="Bold" HeightRequest="40"/>
 						</StackLayout>
 					</StackLayout>
 					<StackLayout>
@@ -72,15 +72,15 @@
 						</Grid>
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" Padding="25" >
-						<StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+						<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="0,0,30,0">
 							<Image Source="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-heart-outline-128.png" HeightRequest="35" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 							<Label Text="Favorilerime Ekle" FontSize="Caption" TextColor="#3b3b3b"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 						</StackLayout>
-						<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+						<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="0,0,50,0">
 							<Image Source="https://cdn3.iconfinder.com/data/icons/outline-style-1/512/notification-128.png" HeightRequest="35" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 							<Label Text="Fiyat Alarmı" FontSize="Caption"  TextColor="#3b3b3b"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 						</StackLayout>
-						<StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand">
+						<StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
 							<Image Source="https://cdn4.iconfinder.com/data/icons/43-social-media-line-icons/24/Share-512.png" HeightRequest="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 							<Label Text="Paylaş" FontSize="Caption"  TextColor="#3b3b3b"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 						</StackLayout>
@@ -95,36 +95,28 @@
 						<Button Text="Yorumlar" Clicked="yorum"  BackgroundColor="Transparent" BorderColor="LightGray" BorderWidth="0.1"  Padding="0"  HeightRequest="35" TextColor="#3b3b3b" CornerRadius="15"  />
 						<Label Text="Yorumlar" x:Name="detay4" IsVisible="False" HorizontalOptions="CenterAndExpand" Padding="10" />
 					</StackLayout>
-
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="180">
-						<StackLayout >
-							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Bu Ürünü İnceleyenlerin İlgisini Çeken Diğer Ürünler" />
-						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
-							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									<Label Text="buralar hep kitap:)" />
-								</StackLayout>
-							</ScrollView>
-						</StackLayout>
-					</StackLayout>
-
-					<StackLayout Orientation="Vertical" BackgroundColor="White" HeightRequest="180">
-						<StackLayout >
-							<Label HorizontalOptions="StartAndExpand" FontSize="17" Text="Bu Ürünü İnceleyenlerin İlgisini Çeken Diğer Ürünler" />
-						</StackLayout>
-						<StackLayout Orientation="Horizontal" BackgroundColor="Red">
-							<ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
-								<StackLayout Orientation="Horizontal" Spacing="50"  >
-									<Label Text="buralar hep kitap:)" />
-								</StackLayout>
-							</ScrollView>
-						</StackLayout>
-					</StackLayout>
-
 				</StackLayout>
 			</ScrollView>
-			<!--alt panel-->
+			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3" >
+				<StackLayout   VerticalOptions="EndAndExpand" Orientation="Horizontal" BackgroundColor="White" HeightRequest="55" >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" Margin="10,0,0,0" >
+						<Button Clicked="anasayfa" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Animals-Dog-House-icon.png" WidthRequest="30" HeightRequest="30" BackgroundColor="Transparent"/>
+						<Label  Text="Ana Sayfa" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical" Margin="0,0,10,0" >
+						<Button Clicked="kategori" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Ecommerce-Price-Tag-icon.png" BackgroundColor="Transparent"/>
+						<Label Text="Kategoriler" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="CenterAndExpand" Orientation="Vertical"  >
+						<Button Clicked="kesfet" HeightRequest="30" WidthRequest="30" ImageSource="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-outline-128.png" BackgroundColor="Transparent"/>
+						<Label Text="Keşfet" />
+					</StackLayout>
+					<StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical" Margin="0,0,15,0" >
+						<Button Clicked="uyegirisi" HeightRequest="30" WidthRequest="30" ImageSource="http://icons.iconarchive.com/icons/iconsmind/outline/96/Shopping-Cart-icon.png" BackgroundColor="Transparent"/>
+						<Label Text="Sepet" />
+					</StackLayout>
+				</StackLayout>
+			</Frame>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

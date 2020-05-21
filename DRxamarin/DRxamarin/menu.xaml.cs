@@ -10,11 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace DRxamarin
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Menu : MasterDetailPage
-	{
-		public Menu()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class Menu : ContentPage
+    {
+        public Menu()
+        {
+            InitializeComponent();
+        }
+        private async void uye(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new uyegirisi());
+        }
+
+        private async void anasayfa(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MainPage());
+        }
+    }
 }

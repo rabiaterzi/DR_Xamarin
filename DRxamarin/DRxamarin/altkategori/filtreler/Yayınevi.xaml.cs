@@ -20,5 +20,17 @@ namespace DRxamarin.filtreler
 		{
 			await Navigation.PushModalAsync(new filtrele());
 		}
+		private void kirmizi(object sender, EventArgs e)
+		{
+			Button btn = (Button)sender;
+			if (btn.TextColor == Color.Red)
+			{
+				btn.TextColor = Color.Black;
+			}
+			else
+			{
+				btn.TextColor = Color.Red;
+			}
+		}
 	}
 }

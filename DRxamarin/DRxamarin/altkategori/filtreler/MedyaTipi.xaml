@@ -13,11 +13,11 @@
 					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Medya Tipi" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
 				</StackLayout>
 			</Frame>
-			<Button Text="İnce Kapak (16133)" BackgroundColor="Transparent" Margin="0,0,190,0"/>
+			<Button Text="İnce Kapak (16133)" BackgroundColor="Transparent" Margin="0,0,190,0" Clicked="kirmizi" TextColor="Black"/>
+			<Label HeightRequest="0.5" BackgroundColor="LightGray" />
+			<Button Text="Ciltli (406)" BackgroundColor="Transparent" Margin="0,0,245,0" Clicked="kirmizi" TextColor="Black"/>
 			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-			<Button Text="Ciltli (406)" BackgroundColor="Transparent" Margin="0,0,245,0"/>
-			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-			<Button Text="Cep Boy (36)" BackgroundColor="Transparent" Margin="0,0,235,0"/>
+			<Button Text="Cep Boy (36)" BackgroundColor="Transparent" Margin="0,0,235,0" Clicked="kirmizi" TextColor="Black"/>
 			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
 			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White" Margin="0,345,0,0"/>
 		</StackLayout>

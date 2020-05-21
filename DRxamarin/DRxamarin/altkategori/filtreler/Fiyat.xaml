@@ -13,15 +13,15 @@
 					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Fiyat" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
 				</StackLayout>
 			</Frame>
-			<Button Text="0 TL - 25 TL (10943)" BackgroundColor="Transparent" Margin="0,0,190,0"/>
+			<Button Text="0 TL - 25 TL (10943)" BackgroundColor="Transparent" Margin="0,0,190,0" Clicked="kirmizi" TextColor="Black"/>
 			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-			<Button Text="25 TL - 50 TL (4919)" BackgroundColor="Transparent" Margin="0,0,191,0"/>
+			<Button Text="25 TL - 50 TL (4919)" BackgroundColor="Transparent" Margin="0,0,191,0" Clicked="kirmizi" TextColor="Black"/>
 			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-			<Button Text="50 TL - 100 TL (597)" BackgroundColor="Transparent" Margin="0,0,190,0"/>
+			<Button Text="50 TL - 100 TL (597)" BackgroundColor="Transparent" Margin="0,0,190,0" Clicked="kirmizi" TextColor="Black"/>
 			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-			<Button Text="100 TL - 250 TL (102)" BackgroundColor="Transparent" Margin="0,0,180,0"/>
+			<Button Text="100 TL - 250 TL (102)" BackgroundColor="Transparent" Margin="0,0,180,0" Clicked="kirmizi" TextColor="Black"/>
 			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-			<Button Text="250 TL ve Üzeri (30)" BackgroundColor="Transparent" Margin="0,0,180,0"/>
+			<Button Text="250 TL ve Üzeri (30)" BackgroundColor="Transparent" Margin="0,0,180,0" Clicked="kirmizi" TextColor="Black"/>
 			<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
 			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White" Margin="0,225,0,0"/>
 		</StackLayout>

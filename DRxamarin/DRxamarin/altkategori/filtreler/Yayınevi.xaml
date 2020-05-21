@@ -16,35 +16,35 @@
 			<SearchBar Placeholder="Yayınevi ara..."/>
 			<ScrollView Orientation="Vertical">
 				<StackLayout Orientation="Vertical">
-					<Button Text="İletişim Yayıncılık (664)" BackgroundColor="Transparent" Margin="0,0,150,0"/>
+					<Button Text="İletişim Yayıncılık (664)" BackgroundColor="Transparent" Margin="0,0,150,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Ötüken Neşriyat (286)" BackgroundColor="Transparent" Margin="0,0,161,0"/>
+					<Button Text="Ötüken Neşriyat (286)" BackgroundColor="Transparent" Margin="0,0,161,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="İş Bankası Kültür Yayınları (270)" BackgroundColor="Transparent" Margin="0,0,95,0"/>
+					<Button Text="İş Bankası Kültür Yayınları (270)" BackgroundColor="Transparent" Margin="0,0,95,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Çizgi Kitabevi (261)" BackgroundColor="Transparent" Margin="0,0,180,0"/>
+					<Button Text="Çizgi Kitabevi (261)" BackgroundColor="Transparent" Margin="0,0,180,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="İmge Kitabevi (249)" BackgroundColor="Transparent" Margin="0,0,180,0"/>
+					<Button Text="İmge Kitabevi (249)" BackgroundColor="Transparent" Margin="0,0,180,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Alfa Yayıncılık (241)" BackgroundColor="Transparent" Margin="0,0,175,0"/>
+					<Button Text="Alfa Yayıncılık (241)" BackgroundColor="Transparent" Margin="0,0,175,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Nobel Akademik Yayıncılık (240)" BackgroundColor="Transparent" Margin="0,0,95,0"/>
+					<Button Text="Nobel Akademik Yayıncılık (240)" BackgroundColor="Transparent" Margin="0,0,95,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Yeditepe Yayınevi (234)" BackgroundColor="Transparent" Margin="0,0,150,0"/>
+					<Button Text="Yeditepe Yayınevi (234)" BackgroundColor="Transparent" Margin="0,0,150,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Kaynak Yayınları (233)" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Button Text="Kaynak Yayınları (233)" BackgroundColor="Transparent" Margin="0,0,160,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="IQ Kültür Sanat Yayıncılık (207)" BackgroundColor="Transparent" Margin="0,0,102,0"/>
+					<Button Text="IQ Kültür Sanat Yayıncılık (207)" BackgroundColor="Transparent" Margin="0,0,102,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Metis Yayıncılık (206)" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Button Text="Metis Yayıncılık (206)" BackgroundColor="Transparent" Margin="0,0,160,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Timaş Yayınları (190)" BackgroundColor="Transparent" Margin="0,0,165,0"/>
+					<Button Text="Timaş Yayınları (190)" BackgroundColor="Transparent" Margin="0,0,165,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Cinius (183)" BackgroundColor="Transparent" Margin="0,0,215,0"/>
+					<Button Text="Cinius (183)" BackgroundColor="Transparent" Margin="0,0,215,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Gece Kitaplığı (170)" BackgroundColor="Transparent" Margin="0,0,175,0"/>
+					<Button Text="Gece Kitaplığı (170)" BackgroundColor="Transparent" Margin="0,0,175,0" Clicked="kirmizi" TextColor="Black"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Doğan Kitap (153)" BackgroundColor="Transparent" Margin="0,0,185,0"/>
+					<Button Text="Doğan Kitap (153)" BackgroundColor="Transparent" Margin="0,0,185,0" Clicked="kirmizi" TextColor="Black"/>
 				</StackLayout>
 			</ScrollView>
 			<Button Clicked="filtre" Text="UYGULA" BackgroundColor="#ff242d" TextColor="White"/>
