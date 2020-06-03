@@ -20,6 +20,8 @@ namespace DRxamarin
 			ad.Text = name;
 			medya.Text = media;
 			fiyat.Text = price;
+			aratoplam.Text = fiyat.Text;
+		    
 			/*foto.Source = new UriImageSource()
 			{
 				Uri = new Uri(photo)
@@ -38,6 +40,14 @@ namespace DRxamarin
 		private void anasayfa(object sender, EventArgs e)
 		{
 			Navigation.PushModalAsync(new MainPage());
+		}
+
+		private void silme(object sender, EventArgs e)
+		{
+			if(check.IsChecked)
+			{
+				urun.IsVisible = false;
+			}
 		}
 	}
 }

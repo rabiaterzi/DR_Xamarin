@@ -38,7 +38,7 @@
 						<ColumnDefinition Width="200"/>
 						<ColumnDefinition Width="200"/>
 					</Grid.ColumnDefinitions>
-					<!--<StackLayout Orientation="Vertical" Spacing="35" BindableLayout.ItemsSource="{Binding Arastırmatarih}" VerticalOptions="Start" WidthRequest="200" Grid.Column="0">
+					<StackLayout Orientation="Vertical" Spacing="35" BindableLayout.ItemsSource="{Binding Arastırmatarih}" VerticalOptions="Start" WidthRequest="200" Grid.Column="0" x:Name="liste1">
 						<BindableLayout.ItemTemplate>
 							<DataTemplate>
 								<StackLayout VerticalOptions="Start" Margin="10,0,0,0" WidthRequest="200">
@@ -56,8 +56,27 @@
 								</StackLayout>
 							</DataTemplate>
 						</BindableLayout.ItemTemplate>
-					</StackLayout>-->
-					<StackLayout Orientation="Vertical" Spacing="35" WidthRequest="200" Grid.Column="0" BackgroundColor="White">
+					</StackLayout>
+					<StackLayout Orientation="Vertical" Spacing="35" BindableLayout.ItemsSource="{Binding Arastırmatarih2}" VerticalOptions="Start" WidthRequest="200" Grid.Column="1" x:Name="liste2">
+						<BindableLayout.ItemTemplate>
+							<DataTemplate>
+								<StackLayout VerticalOptions="Start" Margin="10,0,0,0" WidthRequest="200">
+									<Frame Padding="0" HorizontalOptions="Center" VerticalOptions="Start" CornerRadius="10" HeightRequest="210" WidthRequest="150">
+										<Button BackgroundColor="Transparent" ImageSource="{Binding Photo}" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+									</Frame>
+									<Label Text="{Binding Name}" TextColor="Black" FontSize="15" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
+									<Label Text="{Binding Author}" TextColor="Black" FontSize="13" FontAttributes="Italic" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" WidthRequest="150" HorizontalOptions="Center"/>
+									<Image Source="https://pngimage.net/wp-content/uploads/2018/06/rating-star-png-transparent-3.png" HeightRequest="20" HorizontalOptions="Center"/>
+									<StackLayout Orientation="Horizontal">
+										<Label TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand" BackgroundColor="#ff242d" HeightRequest="33" WidthRequest="40" Text="{Binding Discount}"/>
+										<Label HorizontalOptions="CenterAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" Text="{Binding Price}" TextColor="Black"/>
+									</StackLayout>
+									<Button Margin="0,12,0,0" Text="SEPETE EKLE" HorizontalOptions="Center" BackgroundColor="Transparent" BorderColor="Black" TextColor="Black" BorderWidth="1" WidthRequest="150"/>
+								</StackLayout>
+							</DataTemplate>
+						</BindableLayout.ItemTemplate>
+					</StackLayout>
+					<!--<StackLayout Orientation="Vertical" Spacing="35" WidthRequest="200" Grid.Column="0" BackgroundColor="White">
 						<ListView ItemsSource="{Binding Arastırmatarih}" SeparatorVisibility="None" ItemTapped="ListView_ItemTapped" HasUnevenRows="True" >
 							<ListView.ItemTemplate>
 								<DataTemplate>
@@ -102,7 +121,7 @@
 								</DataTemplate>
 							</ListView.ItemTemplate>
 						</ListView>
-					</StackLayout>
+					</StackLayout>-->
 				</Grid>
 			</ScrollView>
 			<Frame VerticalOptions="EndAndExpand" BorderColor="LightGray" Padding="3" >

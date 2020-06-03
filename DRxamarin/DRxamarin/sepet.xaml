@@ -16,7 +16,7 @@
 					<StackLayout Padding="10" HeightRequest="50">
 						<Label Text="SEPETİM" TextColor="Black" FontAttributes="Bold" FontSize="Large"  />
 					</StackLayout>
-					<StackLayout Padding="10" Spacing="10">
+					<StackLayout Padding="10" Spacing="10" x:Name="urun">
 						<Frame BorderColor="LightGray">
 							<StackLayout Orientation="Vertical">
 								<StackLayout Orientation="Horizontal">
@@ -25,7 +25,7 @@
 										<Label x:Name="ad" Text=" " TextColor="Black" FontSize="15"/>
 										<Label x:Name="medya" Text=" " FontSize="15" TextColor="Gray" FontAttributes="Bold"/>
 									</StackLayout>
-									<CheckBox HorizontalOptions="EndAndExpand" Color="Gray"/>
+									<CheckBox HorizontalOptions="EndAndExpand" Color="Gray" x:Name="check"/>
 								</StackLayout>
 								<StackLayout Orientation="Horizontal">
 									<StackLayout Orientation="Vertical">
@@ -48,12 +48,12 @@
 					</StackLayout>
 					<StackLayout Orientation="Vertical" Padding="10" Spacing="20">
 						<StackLayout Orientation="Horizontal" >
-							<Button Text="sil" FontSize="13"  BackgroundColor="Transparent" />
+							<Button Text="sil" FontSize="13"  BackgroundColor="Transparent" Clicked="silme"/>
 							<Button Text="favorilerime ekle" FontSize="13" BackgroundColor="Transparent"/>
 						</StackLayout>
 						<StackLayout Orientation="Horizontal">
 							<Label Text="Ara Toplam:" FontSize="Medium" TextColor="Black" FontAttributes="Bold" />
-							<Label Text="00,00" FontSize="Medium" TextColor="Black" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
+							<Label Text="00,00" x:Name="aratoplam" FontSize="Medium" TextColor="Black" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
 							<Label Text="TL" FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
 						</StackLayout>
 						<StackLayout>

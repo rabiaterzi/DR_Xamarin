@@ -11,6 +11,7 @@
 				<StackLayout Orientation="Horizontal" BackgroundColor="White" HeightRequest="40" >
 					<Button BackgroundColor="Transparent" WidthRequest="60" Clicked="arastırmatarih" HorizontalOptions="Start" ImageSource="http://icons.iconarchive.com/icons/icons8/ios7/72/Arrows-Left-icon.png"/>
 					<Label Margin="15,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="Center" BackgroundColor="Transparent" Text="Filtre" FontSize="Title" TextColor="Black" FontAttributes="Bold" WidthRequest="200"/>
+					<Button BackgroundColor="White" Text="Tümünü Temizle" TextColor="Red" FontSize="10" Clicked="arastirma"/>
 				</StackLayout>
 			</Frame>
 			<StackLayout Orientation="Vertical" BackgroundColor="#f9f9f9">

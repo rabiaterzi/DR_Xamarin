@@ -15,25 +15,25 @@
 			</Frame>
 			<ScrollView Orientation="Vertical">
 				<StackLayout Orientation="Vertical">
-					<Button Text="En Çok Satan" BackgroundColor="Transparent" Margin="0,0,195,0"/>
+					<Button Text="En Çok Satan" BackgroundColor="Transparent" Margin="0,0,195,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Fiyata Göre Azalan" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Button Text="Fiyata Göre Azalan" BackgroundColor="Transparent" Margin="0,0,160,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Fiyata Göre Artan" BackgroundColor="Transparent" Margin="0,0,168,0"/>
+					<Button Text="Fiyata Göre Artan" BackgroundColor="Transparent" Margin="0,0,168,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="En Çok Yorum Alan" BackgroundColor="Transparent" Margin="0,0,160,0"/>
+					<Button Text="En Çok Yorum Alan" BackgroundColor="Transparent" Margin="0,0,160,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Yeni" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Button Text="Yeni" BackgroundColor="Transparent" Margin="0,0,260,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Eski" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Button Text="Eski" BackgroundColor="Transparent" Margin="0,0,260,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="A-Z" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Button Text="A-Z" BackgroundColor="Transparent" Margin="0,0,260,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="Z-A" BackgroundColor="Transparent" Margin="0,0,260,0"/>
+					<Button Text="Z-A" BackgroundColor="Transparent" Margin="0,0,260,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="İndirime Göre Azalan" BackgroundColor="Transparent" Margin="0,0,145,0"/>
+					<Button Text="İndirime Göre Azalan" BackgroundColor="Transparent" Margin="0,0,145,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
-					<Button Text="İndirime Göre Artan" BackgroundColor="Transparent" Margin="0,0,145,0"/>
+					<Button Text="İndirime Göre Artan" BackgroundColor="Transparent" Margin="0,0,145,0" Clicked="kirmizi"/>
 					<Label HeightRequest="0.5" BackgroundColor="LightGray"/>
 				</StackLayout>
 			</ScrollView>

@@ -23,7 +23,7 @@
 				<Frame BorderColor="LightGray" Grid.Column="0">
 					<ScrollView Orientation="Vertical" >
 						<StackLayout Orientation="Vertical">
-							<StackLayout Orientation="Vertical" HeightRequest="80" BackgroundColor="#f3f1f1" WidthRequest="105">
+							<StackLayout Orientation="Vertical" HeightRequest="80" WidthRequest="105">
 								<Button Clicked="kitap" BackgroundColor="Transparent" ImageSource="http://icons.iconarchive.com/icons/pixelkit/swanky-outlines/72/05-Bookmark-Book-icon.png"/>
 								<Label Text="Kitap" TextColor="Black" HorizontalOptions="Center"/>
 							</StackLayout>

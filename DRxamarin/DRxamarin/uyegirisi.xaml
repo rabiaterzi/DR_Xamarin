@@ -12,7 +12,7 @@
 				<StackLayout Orientation="Vertical"  Spacing="25" Padding="20">
 					<StackLayout>
 						<Label Text="E-Posta Adresi" />
-						<Entry Keyboard="Email"   />
+						<Entry Keyboard="Email" x:Name="email2"  />
 					</StackLayout>
 					<StackLayout Spacing="10">
 						<StackLayout Orientation="Horizontal">
@@ -20,7 +20,7 @@
 							<Label Text="Parolamı Unuttum"  HorizontalOptions="EndAndExpand" TextDecorations="Underline" />
 						</StackLayout>
 
-						<Entry IsPassword="True" />
+						<Entry IsPassword="True" x:Name="sifre2"/>
 					</StackLayout>
 
 					<StackLayout Orientation="Horizontal">
@@ -40,19 +40,19 @@
 				<StackLayout Orientation="Vertical" Spacing="25" Padding="20">
 					<StackLayout>
 						<Label Text="Adınız" />
-						<Entry  />
+						<Entry x:Name="isim"/>
 					</StackLayout>
 					<StackLayout>
 						<Label Text="Soyadınız" />
-						<Entry  />
+						<Entry  x:Name="soyisim"/>
 					</StackLayout>
 					<StackLayout>
 						<Label Text="E-Posta Adresiniz" />
-						<Entry Keyboard="Email" />
+						<Entry Keyboard="Email" x:Name="email"/>
 					</StackLayout>
 					<StackLayout>
 						<Label Text="Şifrenizi Oluşturun" />
-						<Entry Placeholder="En az 8 karakter - En az 1 büyük harf - En az bir küçük harf" IsPassword="True" />
+						<Entry Placeholder="En az 8 karakter - En az 1 büyük harf - En az bir küçük harf" IsPassword="True" x:Name="sifre"/>
 					</StackLayout>
 					<StackLayout>
 						<Label Text="Şifrenizi Tekrar Giriniz" />
@@ -67,7 +67,7 @@
 						<Label Text="Önemli kampanyalardan haberdar olmak için Rıza Metni kapsamında elektronik ileti almak istiyorum." />
 					</StackLayout>
 					<StackLayout>
-						<Button Text="Üye Ol" FontAttributes="Bold"  BackgroundColor="Red" TextColor="White"  />
+						<Button Text="Üye Ol" FontAttributes="Bold"  BackgroundColor="Red" TextColor="White" Clicked="uyeol" />
 					</StackLayout>
 					<StackLayout>
 						<Label Text="Kişisel verilerini, Aydınlatma Metni kapsamında işlenmektedir. Üye Ol butonuna basarak Üyelik Sözleşmesi'ni, 'Rıza Metni'ni, 'Gizlilik ve Çerez Politikası'nı kabul ettiğinizi onaylıyorsunuz." />
